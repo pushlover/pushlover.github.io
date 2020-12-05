@@ -185,7 +185,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端面经</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -205,7 +205,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端/javascript//" class="article-tag-list-link color1">javascript</a>
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
@@ -252,7 +252,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/05/2/">var,let和const的区别和共同点</a>
+      <a class="article-title" href="/2020/12/05/2/">mac上安装React脚手架并运行项目</a>
     </h1>
   
 
@@ -265,17 +265,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.第一步先确认一下自己的电脑是否装了node和npm，打开终端，输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-fe31d1c6317f92fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>这里我的电脑显示是没有安装的。</p>
+        <h4 id="1-第一步先确认一下自己的电脑是否装了node和npm，打开终端，输入："><a href="#1-第一步先确认一下自己的电脑是否装了node和npm，打开终端，输入：" class="headerlink" title="1.第一步先确认一下自己的电脑是否装了node和npm，打开终端，输入："></a>1.第一步先确认一下自己的电脑是否装了node和npm，打开终端，输入：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-fe31d1c6317f92fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>这里我的电脑显示是没有安装的。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-d377ae166cff5bba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>npm是安装了的。<br>2.第二步安装nodejs，去<a target="_blank" rel="noopener" href="https://nodejs.org/en/%E4%B8%8B%E8%BD%BD%E3%80%82">https://nodejs.org/en/下载。</a><br><img src="https://upload-images.jianshu.io/upload_images/19449585-d21815d49abcb9f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>下载后直接双击pkg文件即可完成安装。<br>3.第三步在终端输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-d377ae166cff5bba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>npm是安装了的。</p>
+<h4 id="2-第二步安装nodejs，去https-nodejs-org-en-下载。"><a href="#2-第二步安装nodejs，去https-nodejs-org-en-下载。" class="headerlink" title="2.第二步安装nodejs，去https://nodejs.org/en/下载。"></a>2.第二步安装nodejs，去<a target="_blank" rel="noopener" href="https://nodejs.org/en/%E4%B8%8B%E8%BD%BD%E3%80%82">https://nodejs.org/en/下载。</a></h4><p><img src="https://upload-images.jianshu.io/upload_images/19449585-d21815d49abcb9f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>下载后直接双击pkg文件即可完成安装。</p>
+<h4 id="3-第三步在终端输入："><a href="#3-第三步在终端输入：" class="headerlink" title="3.第三步在终端输入："></a>3.第三步在终端输入：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>如果报错则在前面加上<code>sudo</code>再运行一次。<br>4.第四步才是安装脚手架的过程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g create-react-app</span><br><span class="line">create-react-app my-app</span><br><span class="line">cd my-app&#x2F;</span><br><span class="line">npm start</span><br></pre></td></tr></table></figure>
+<p>如果报错则在前面加上<code>sudo</code>再运行一次。</p>
+<h4 id="4-第四步才是安装脚手架的过程"><a href="#4-第四步才是安装脚手架的过程" class="headerlink" title="4.第四步才是安装脚手架的过程"></a>4.第四步才是安装脚手架的过程</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g create-react-app</span><br><span class="line">create-react-app my-app</span><br><span class="line">cd my-app&#x2F;</span><br><span class="line">npm start</span><br></pre></td></tr></table></figure>
 <p>以上过程是如何创建一个react项目。</p>
-<p>但是如果我们是从网上下载下来一个react项目该如何运行它呢？<br>1.首先第一步，我们在vscode上打开它：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-643a7529b6298e4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>可以看到它的目录结构是上面这样的。<br>2.在该目录下运行<code>npm install</code>安装所需要的包：<br>3.第二步运行结束后我们输入<code>npm start</code>就可以了，此时浏览器就会出现页面。<br><img src="https://upload-images.jianshu.io/upload_images/19449585-4f4a400453e26831.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>但是如果我们是从网上下载下来一个react项目该如何运行它呢？</p>
+<h4 id="1-首先第一步，我们在vscode上打开它："><a href="#1-首先第一步，我们在vscode上打开它：" class="headerlink" title="1.首先第一步，我们在vscode上打开它："></a>1.首先第一步，我们在vscode上打开它：</h4><p><img src="https://upload-images.jianshu.io/upload_images/19449585-643a7529b6298e4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>可以看到它的目录结构是上面这样的。</p>
+<h4 id="2-在该目录下运行npm-install安装所需要的包："><a href="#2-在该目录下运行npm-install安装所需要的包：" class="headerlink" title="2.在该目录下运行npm install安装所需要的包："></a>2.在该目录下运行<code>npm install</code>安装所需要的包：</h4><h4 id="3-第二步运行结束后我们输入npm-start就可以了，此时浏览器就会出现页面。"><a href="#3-第二步运行结束后我们输入npm-start就可以了，此时浏览器就会出现页面。" class="headerlink" title="3.第二步运行结束后我们输入npm start就可以了，此时浏览器就会出现页面。"></a>3.第二步运行结束后我们输入<code>npm start</code>就可以了，此时浏览器就会出现页面。</h4><p><img src="https://upload-images.jianshu.io/upload_images/19449585-4f4a400453e26831.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <p>react项目每次更新都会自动刷新页面的。</p>
 
       
@@ -290,6 +296,10 @@
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
         		</li>
@@ -466,7 +476,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">前端面经</a>
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
              
               <li class="article-tag-list-item">
