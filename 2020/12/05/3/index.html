@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>如何使用js | mxy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一种方式，将js内容写在html外面：   我们只要引入这个js文件就可以了。 12345678910111213&lt;!DOCTYPE html&gt;&lt;html lang&#x3D;&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;    &lt;meta name&#x3D;">
+  <meta name="description" content="第一种方式，将js内容写在html外面：     我们只要引入这个js文件就可以了。 12345678910111213&lt;!DOCTYPE html&gt;&lt;html lang&#x3D;&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;    &lt;meta name&amp;#x3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何使用js">
 <meta property="og:url" content="http://example.com/2020/12/05/3/index.html">
 <meta property="og:site_name" content="mxy">
-<meta property="og:description" content="第一种方式，将js内容写在html外面：   我们只要引入这个js文件就可以了。 12345678910111213&lt;!DOCTYPE html&gt;&lt;html lang&#x3D;&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;    &lt;meta name&#x3D;">
+<meta property="og:description" content="第一种方式，将js内容写在html外面：     我们只要引入这个js文件就可以了。 12345678910111213&lt;!DOCTYPE html&gt;&lt;html lang&#x3D;&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;    &lt;meta name&amp;#x3">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/19449585-ee505dbcac16e638.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/19449585-f6973ae1cccae178.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/19449585-909de6754acd3139.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="article:published_time" content="2020-12-04T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-05T16:19:48.569Z">
+<meta property="article:modified_time" content="2020-12-05T16:24:50.593Z">
 <meta property="article:author" content="Xinyu Miao">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="js">
@@ -74,8 +74,6 @@
 		</nav>
 		<nav class="header-smart-menu">
     		
-    			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
             
     			
@@ -176,7 +174,9 @@
 <li>第一种方式，将js内容写在html外面：</li>
 </ol>
 </blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-ee505dbcac16e638.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-f6973ae1cccae178.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>我们只要引入这个js文件就可以了。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-ee505dbcac16e638.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-f6973ae1cccae178.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>我们只要引入这个js文件就可以了。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;script src&#x3D;&quot;first.js&quot;&gt;</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    </span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <ol start="2">
@@ -186,7 +186,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        console.log(&quot;我在学习js&quot;)</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    </span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 <p>此时我们打开console控制台：</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/19449585-909de6754acd3139.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p><strong>但是我们一般不建议把js写在head里面，这是因为浏览器会先执行head里面的内容，再去执行body，这样的话我们必须先完成与js的交互，才能显示body里面的内容，所以我们一般将<script>写在<body>里面。</strong></p>
+<p><strong>但是我们一般不建议把js写在head里面，这是因为浏览器会先执行head里面的内容，再去执行body，这样的话我们必须先完成与js的交互，才能显示body里面的内容，所以我们一般<scrip>写在<body>里面。</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;hello&lt;&#x2F;h1&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        alert(&quot;www&quot;)</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
 
@@ -273,15 +273,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/12/05/2/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/12/05/1/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          mac上安装React脚手架并运行项目
+          var,let和const的区别和共同点
         
       </div>
     </a>
   
+  
+    <a href="/2020/12/05/2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">mac上安装React脚手架并运行项目</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -403,7 +408,7 @@
 		open_in_new: true,
 		toc_hide_index: false,
 		root: "/",
-		innerArchive: true,
+		innerArchive: false,
 		showTags: false
 	}
 </script>
@@ -443,8 +448,6 @@ MathJax.Hub.Queue(function() {
     
     
       
-      
-      
     
       
       
@@ -460,87 +463,18 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+        
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
   </div>
   <div class="tools-wrap">
-    
-    	<section class="tools-section tools-section-all" q-show="innerArchive">
-        <div class="search-wrap">
-          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
-          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
-          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
-        </div>
-        <div class="widget tagcloud search-tag">
-          <p class="search-tag-wording">tag:</p>
-          <label class="search-switch">
-            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
-          </label>
-          <ul class="article-tag-list" q-show="showTags">
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">react</a>
-              </li>
-            
-            <div class="clearfix"></div>
-          </ul>
-        </div>
-        <ul class="search-ul">
-          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
-            3、在根目录_config.yml里添加配置：
-<pre style="font-size: 12px;" q-show="jsonFail">
-  jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
-</pre>
-          </p>
-          <li class="search-li" q-repeat="items" q-show="isShow">
-            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
-            <p class="search-time">
-              <i class="icon-calendar icon"></i>
-              <span q-text="date|dateformat"></span>
-            </p>
-            <p class="search-tag">
-              <i class="icon-price-tags icon"></i>
-              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
-            </p>
-          </li>
-        </ul>
-    	</section>
     
 
     
