@@ -966,7 +966,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <ol>
+<li>有哪些数据类型？（分类）<h3 id="有6种，两大类：基本类型（值类型）和对象类型（引用类型）"><a href="#有6种，两大类：基本类型（值类型）和对象类型（引用类型）" class="headerlink" title="有6种，两大类：基本类型（值类型）和对象类型（引用类型）"></a>有6种，两大类：基本类型（值类型）和对象类型（引用类型）</h3><blockquote>
+<p>基本类型：</p>
+</blockquote>
+<h5 id="String-：任意字符串"><a href="#String-：任意字符串" class="headerlink" title="String ：任意字符串"></a>String ：任意字符串</h5><h5 id="Number-：任意数字"><a href="#Number-：任意数字" class="headerlink" title="Number ：任意数字"></a>Number ：任意数字</h5><h5 id="boolean：true和false"><a href="#boolean：true和false" class="headerlink" title="boolean：true和false"></a>boolean：true和false</h5><h5 id="undefined：undefined"><a href="#undefined：undefined" class="headerlink" title="undefined：undefined"></a>undefined：undefined</h5><h5 id="null：null"><a href="#null：null" class="headerlink" title="null：null"></a>null：null</h5><blockquote>
+<p>对象类型：</p>
+</blockquote>
+<h5 id="Object：任意对象"><a href="#Object：任意对象" class="headerlink" title="Object：任意对象"></a>Object：任意对象</h5><h5 id="Function：一种特别的对象（可以执行）"><a href="#Function：一种特别的对象（可以执行）" class="headerlink" title="Function：一种特别的对象（可以执行）"></a>Function：一种特别的对象（可以执行）</h5><h5 id="Array：一种特别的对象（数值下标），内部数据有序"><a href="#Array：一种特别的对象（数值下标），内部数据有序" class="headerlink" title="Array：一种特别的对象（数值下标），内部数据有序"></a>Array：一种特别的对象（数值下标），内部数据有序</h5></li>
+<li>怎么判断数据类型？（判断）<h5 id="typeof-返回类型的字符串表示形式-可以判断undefined，number，string，boolean，function类型，不能判断null-将其判断成object，也不能判断array类型，会判断成object类型"><a href="#typeof-返回类型的字符串表示形式-可以判断undefined，number，string，boolean，function类型，不能判断null-将其判断成object，也不能判断array类型，会判断成object类型" class="headerlink" title="typeof:返回类型的字符串表示形式,可以判断undefined，number，string，boolean，function类型，不能判断null,将其判断成object，也不能判断array类型，会判断成object类型"></a>typeof:返回类型的字符串表示形式,可以判断undefined，number，string，boolean，function类型，不能判断null,将其判断成object，也不能判断array类型，会判断成object类型</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var a;</span><br><span class="line">console.log(a, typeof a); Out: undefined &quot;undefined&quot;</span><br><span class="line">console.log(a&#x3D;&#x3D;&#x3D;undefined); Out:true</span><br><span class="line">console.log(typeof a&#x3D;&#x3D;&#x3D;&quot;function&quot;);</span><br><span class="line">a &#x3D; null;</span><br><span class="line">console.log(typeof a); Out:&#39;Object&#39;</span><br></pre></td></tr></table></figure>
+<h5 id="instanceof-判断对象类型"><a href="#instanceof-判断对象类型" class="headerlink" title="instanceof:判断对象类型"></a>instanceof:判断对象类型</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.log(a instanceof Object);</span><br><span class="line">console.log(a instanceof Array);</span><br><span class="line">console.log(a instanceof Fuction);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="：可以判断undefined-null"><a href="#：可以判断undefined-null" class="headerlink" title="===：可以判断undefined,null"></a>===：可以判断undefined,null</h5></li>
+</ol>
+<blockquote>
+<p>相关问题：</p>
+</blockquote>
+<ol>
+<li>undefined与null区别？<h5 id="undefined：定义了未被赋值"><a href="#undefined：定义了未被赋值" class="headerlink" title="undefined：定义了未被赋值"></a>undefined：定义了未被赋值</h5><h5 id="null：定义了也赋值了，但是赋值的是null"><a href="#null：定义了也赋值了，但是赋值的是null" class="headerlink" title="null：定义了也赋值了，但是赋值的是null"></a>null：定义了也赋值了，但是赋值的是null</h5></li>
+<li>什么时候给变量赋值给null？<h5 id="为了表明将要把变量赋值给对象时"><a href="#为了表明将要把变量赋值给对象时" class="headerlink" title="为了表明将要把变量赋值给对象时"></a>为了表明将要把变量赋值给对象时</h5><h5 id="最后赋值给null是为了释放内存，让b指向的对象成为垃圾对象"><a href="#最后赋值给null是为了释放内存，让b指向的对象成为垃圾对象" class="headerlink" title="最后赋值给null是为了释放内存，让b指向的对象成为垃圾对象"></a>最后赋值给null是为了释放内存，让b指向的对象成为垃圾对象</h5></li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Mz4y1Q79G?p=2">https://www.bilibili.com/video/BV1Mz4y1Q79G?p=2</a></p>
+
       
       
 
@@ -1293,15 +1313,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">算法</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">线性动态规划</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
