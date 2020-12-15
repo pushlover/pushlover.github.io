@@ -19,7 +19,7 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/19449585-dba50f10ce49c005.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/19449585-bba102e18e940c9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="article:published_time" content="2020-12-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-11T11:46:31.248Z">
+<meta property="article:modified_time" content="2020-12-15T11:14:54.394Z">
 <meta property="article:author" content="Xinyu Miao">
 <meta property="article:tag" content="算法">
 <meta property="article:tag" content="线性动态规划">
@@ -70,7 +70,7 @@
 			</ul>
 		</nav>
                 <nav>
-   			总文章数 68
+   			总文章数 75
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -182,7 +182,7 @@
 <li><p>依赖比 i 小的 O(1) 个子问题<br>dp[n] 只与常数个小规模子问题有关，状态的推导过程 dp[i] = f(dp[i - 1], dp[i - 2], …)。时间复杂度 O(n)，空间复杂度 O(n)可以优化为 O(1)，例如上面提到的 70, 801, 790, 746 都属于这类。<br>如图所示，虽然绿色部分的 dp[i-1], dp[i-2], …, dp[0] 均已经计算过，但计算橙色的当前状态时，仅用到 dp[i-1]，这属于比 i 小的 O(1)O(1) 个子问题。<br>例如，当 f(dp[i-1], …) = dp[i-1] + nums[i] 时，当前状态 dp[i] 仅与 dp[i-1] 有关。这个例子是一种数据结构前缀和的状态计算方式，关于前缀和的详细内容请参考下一章。</p>
 </li>
 <li><p> 依赖比 i 小的 O(n) 个子问题<br>dp[n] 与此前的更小规模的所有子问题 dp[n - 1], dp[n - 2], …, dp[1] 都可能有关系。<br>状态推导过程如下：<br>dp[i] = f(dp[i - 1], dp[i - 2], …, dp[0])<br>依然如图所示，计算橙色的当前状态 dp[i] 时，绿色的此前计算过的状态 dp[i-1], …, dp[0] 均有可能用到，在计算 dp[i] 时需要将它们遍历一遍完成计算。<br>其中 f 常见的有 max/min，可能还会对 i-1,i-2,…,0 有一些筛选条件，但推导 dp[n] 时依然是 O(n)级的子问题数量。<br>例如：<br>139 单词拆分<br>818 赛车<br>以 min 函数为例，这种形式的问题的代码常见写法如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for i &#x3D; 1, ..., n</span><br><span class="line">    for j &#x3D; 1, ..., i-1</span><br><span class="line">        dp[i] &#x3D; min(dp[i], f(dp[j])</span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i = <span class="number">1</span>, ..., n</span><br><span class="line">    <span class="keyword">for</span> j = <span class="number">1</span>, ..., i-<span class="number">1</span></span><br><span class="line">        dp[i] = <span class="built_in">min</span>(dp[i], f(dp[j])</span><br></pre></td></tr></table></figure>
 <p>时间复杂度 O(n^{2})，空间复杂度 O(n)</p>
 </li>
 </ol>
@@ -294,11 +294,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/12/06/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAwebpack%E9%A1%B9%E7%9B%AE/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          什么是线性动态规划
+          创建一个webpack项目
         
       </div>
     </a>
@@ -551,15 +551,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">算法</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">线性动态规划</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
