@@ -16,7 +16,7 @@
 <meta property="og:description" content="有哪些数据类型？（分类）  有6种，两大类：基本类型（值类型）和对象类型（引用类型） 基本类型：  String ：任意字符串Number ：任意数字boolean：true和falseundefined：undefinednull：null 对象类型：  Object：任意对象用花括号来书写。对象属性是 name:value 对，由逗号分隔。 1var person &#x3D; &amp;#123;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-15T11:20:35.549Z">
+<meta property="article:modified_time" content="2020-12-15T15:35:31.732Z">
 <meta property="article:author" content="Xinyu Miao">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="js">
@@ -184,7 +184,9 @@
 <p>typeof 运算符不会把函数返回 object。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a;</span><br><span class="line"><span class="built_in">console</span>.log(a, <span class="keyword">typeof</span> a); Out: <span class="literal">undefined</span> <span class="string">&quot;undefined&quot;</span></span><br><span class="line"><span class="built_in">console</span>.log(a===<span class="literal">undefined</span>); Out:<span class="literal">true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a===<span class="string">&quot;function&quot;</span>);</span><br><span class="line">a = <span class="literal">null</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a); Out:<span class="string">&#x27;Object&#x27;</span></span><br></pre></td></tr></table></figure>
 <h5 id="instanceof-判断对象类型"><a href="#instanceof-判断对象类型" class="headerlink" title="instanceof:判断对象类型"></a>instanceof:判断对象类型</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Object</span>);</span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Array</span>);</span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> Fuction);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h5 id="：可以判断undefined-null"><a href="#：可以判断undefined-null" class="headerlink" title="===：可以判断undefined,null"></a>===：可以判断undefined,null</h5><blockquote>
+<h5 id="：可以判断undefined-null"><a href="#：可以判断undefined-null" class="headerlink" title="===：可以判断undefined,null"></a>===：可以判断undefined,null</h5><h5 id="Array-isArray-：判断数组"><a href="#Array-isArray-：判断数组" class="headerlink" title="Array.isArray()：判断数组"></a>Array.isArray()：判断数组</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.isArray(fruits);     <span class="comment">// 返回 true</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
 <p>相关问题：</p>
 </blockquote>
 <ol>
@@ -288,8 +290,8 @@
     </a>
   
   
-    <a href="/2020/12/06/Vue%E8%B7%AF%E7%94%B1%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%AE%9E%E7%8E%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Vue路由的两种实现</div>
+    <a href="/2020/12/06/ES6%E4%B8%AD%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ES6中用过哪些特性</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -624,6 +626,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://sherrybabyone.github.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Sherry</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.w3school.com.cn/js/js_date_methods.asp" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>js-w3school</a>
             </li>
           
         </ul>

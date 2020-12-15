@@ -536,105 +536,6 @@
 
 
   
-    <article id="post-ES6中用过哪些特性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/ES6%E4%B8%AD%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7/">ES6中用过哪些特性</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/06/ES6%E4%B8%AD%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7/" class="archive-article-date">
-  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>const和let</li>
-<li>字符串格式化<br>等等……</li>
-<li>箭头函数<br>具体看这篇文章：<br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/287e0bb867ae">https://www.jianshu.com/p/287e0bb867ae</a></li>
-</ol>
-
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/06/ES6%E4%B8%AD%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
     <article id="post-HTTP状态码有哪些" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -767,7 +668,9 @@
 <p>typeof 运算符不会把函数返回 object。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a;</span><br><span class="line"><span class="built_in">console</span>.log(a, <span class="keyword">typeof</span> a); Out: <span class="literal">undefined</span> <span class="string">&quot;undefined&quot;</span></span><br><span class="line"><span class="built_in">console</span>.log(a===<span class="literal">undefined</span>); Out:<span class="literal">true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a===<span class="string">&quot;function&quot;</span>);</span><br><span class="line">a = <span class="literal">null</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a); Out:<span class="string">&#x27;Object&#x27;</span></span><br></pre></td></tr></table></figure>
 <h5 id="instanceof-判断对象类型"><a href="#instanceof-判断对象类型" class="headerlink" title="instanceof:判断对象类型"></a>instanceof:判断对象类型</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Object</span>);</span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Array</span>);</span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> Fuction);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h5 id="：可以判断undefined-null"><a href="#：可以判断undefined-null" class="headerlink" title="===：可以判断undefined,null"></a>===：可以判断undefined,null</h5><blockquote>
+<h5 id="：可以判断undefined-null"><a href="#：可以判断undefined-null" class="headerlink" title="===：可以判断undefined,null"></a>===：可以判断undefined,null</h5><h5 id="Array-isArray-：判断数组"><a href="#Array-isArray-：判断数组" class="headerlink" title="Array.isArray()：判断数组"></a>Array.isArray()：判断数组</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.isArray(fruits);     <span class="comment">// 返回 true</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
 <p>相关问题：</p>
 </blockquote>
 <ol>
@@ -822,6 +725,105 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/12/06/JS%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-ES6中用过哪些特性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/06/ES6%E4%B8%AD%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7/">ES6中用过哪些特性</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/06/ES6%E4%B8%AD%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7/" class="archive-article-date">
+  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>const和let</li>
+<li>字符串格式化<br>等等……</li>
+<li>箭头函数<br>具体看这篇文章：<br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/287e0bb867ae">https://www.jianshu.com/p/287e0bb867ae</a></li>
+</ol>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/06/ES6%E4%B8%AD%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7/">展开全文 >></a>
         </p>
       
 
@@ -1386,6 +1388,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://sherrybabyone.github.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Sherry</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.w3school.com.cn/js/js_date_methods.asp" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>js-w3school</a>
             </li>
           
         </ul>
