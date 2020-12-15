@@ -498,13 +498,13 @@ res 的结果是：Banana</li>
 </blockquote>
 <p>为了最佳可读性， 程序员们通常会避免每行代码超过 80 个字符串。</p>
 <p>如果某条 JavaScript 语句不适合一整行，那么最佳换行位置是某个运算符之后：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).innerHTML =</span><br><span class="line">&quot;Hello Kitty.&quot;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML =</span><br><span class="line"><span class="string">&quot;Hello Kitty.&quot;</span>;</span><br></pre></td></tr></table></figure>
 <p>可以修改成:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello \</span><br><span class="line">Kitty!&quot;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML = <span class="string">&quot;Hello \</span></span><br><span class="line"><span class="string">Kitty!&quot;</span>;</span><br></pre></td></tr></table></figure>
 <p>\ 方法并不是 ECMAScript (JavaScript) 标准。</p>
 <p>某些浏览器也不允许 \ 字符之后的空格。</p>
 <p>对长字符串换行的最安全做法（但是有点慢）是使用字符串加法：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello&quot; + </span><br><span class="line">&quot;Kitty!&quot;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML = <span class="string">&quot;Hello&quot;</span> + </span><br><span class="line"><span class="string">&quot;Kitty!&quot;</span>;</span><br></pre></td></tr></table></figure>
 <hr>
 <p>字符串可以是对象<br>通常，JavaScript 字符串是原始值，通过字面方式创建：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstName = <span class="string">&quot;Bill&quot;</span></span><br></pre></td></tr></table></figure>
@@ -816,7 +816,7 @@ res 的结果是：Banana</li>
         <h5 id="有三种"><a href="#有三种" class="headerlink" title="有三种"></a>有三种</h5><ol>
 <li>脚本可被放置与 HTML 页面的 <body> 中。</li>
 <li>脚本可被放置与 HTML 页面的 <head> 部分中。</li>
-<li>脚本可放置与外部文件中：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src&#x3D;&quot;myScript.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<li>脚本可放置与外部文件中：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">&quot;myScript.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_shiyong.asp">https://www.w3school.com.cn/js/js_shiyong.asp</a></li>
 </ol>
 
@@ -900,7 +900,7 @@ res 的结果是：Banana</li>
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/14/js%E8%BE%93%E5%87%BA/">如何使用js</a>
+      <a class="article-title" href="/2020/12/14/js%E8%BE%93%E5%87%BA/">js输出</a>
     </h1>
   
 
@@ -917,8 +917,8 @@ res 的结果是：Banana</li>
 <li><code>console.log()</code></li>
 <li><code>alert() 弹出警告框</code></li>
 <li><code>document.write() 显示在html页面中</code></li>
-<li>使用 innerHTML<br>如需访问 HTML 元素，JavaScript 可使用 document。getElementById(id) 方法。<br>id 属性定义 HTML 元素。innerHTML 属性定义 HTML 内容：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;js输出&lt;&#x2F;title&gt;</span><br><span class="line">   </span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;p id &#x3D; &quot;demo&quot;&gt;我&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        document.getElementById(&quot;demo&quot;).innerHTML&#x3D;5+6;</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-出于测试目的，使用 document.write() 比较方便：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.write(5 + 6);</span><br></pre></td></tr></table></figure>
+<li><code>使用 innerHTML</code><br>如需访问 HTML 元素，JavaScript 可使用 document。getElementById(id) 方法。<br>id 属性定义 HTML 元素。innerHTML 属性定义 HTML 内容：<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>js输出<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">   </span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span> = <span class="string">&quot;demo&quot;</span>&gt;</span>我<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML=<span class="number">5</span>+<span class="number">6</span>;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+出于测试目的，使用 document.write() 比较方便：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.write(<span class="number">5</span> + <span class="number">6</span>);</span><br></pre></td></tr></table></figure>
 注意:在 HTML 文档完全加载后使用 document.write() 将删除所有已有的 HTML ：</li>
 </ol>
 <p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_output.asp">https://www.w3school.com.cn/js/js_output.asp</a></p>
@@ -1461,15 +1461,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">移动端布局</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">移动端布局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vscode插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1478,10 +1482,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">线性动态规划</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">

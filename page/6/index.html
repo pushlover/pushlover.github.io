@@ -143,6 +143,114 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-什么是线性动态规划系列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/">什么是线性动态规划</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/" class="archive-article-date">
+  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>线性动态规划的主要特点是状态的推导是按照问题规模 i 从小到大依次推过去的，较大规模的问题的解依赖较小规模的问题的解。</p>
+<p>这里问题规模为 i 的含义是考虑前 i 个元素 [0..i] 时问题的解。</p>
+<p>状态定义：</p>
+<blockquote>
+<p>dp[n] := [0..n] 上问题的解</p>
+</blockquote>
+<p>状态转移：</p>
+<blockquote>
+<p>dp[n] = f(dp[n-1], …, dp[0])</p>
+</blockquote>
+<p>从以上状态定义和状态转移可以看出，大规模问题的状态只与较小规模的问题有关，而<strong>问题规模</strong>完全用一个变量 i 表示，i 的大小表示了问题规模的大小，因此从小到大推 i 直至推到 n，就得到了大规模问题的解，这就是线性动态规划的过程。</p>
+<p>按照问题的输入格式，线性动态规划解决的问题主要是<strong>单串，双串，矩阵</strong>上的问题，因为在单串，双串，矩阵上问题规模可以完全用位置表示，并且位置的大小就是问题规模的大小。因此从前往后推位置就相当于从小到大推问题规模。</p>
+<p>线性动态规划是动态规划中最基本的一类。问题的形式、dp 状态和方程的设计、以及与其它算法的结合上面变化很多。按照 dp 方程中各个维度的含义，可以大致总结出几个主流的问题类型。除此之外还有很多没有总结进来的变种问题，小众问题，和困难问题，这些问题的解法更多地需要结合自己的做题经验去积累，除此之外，常见的，主流的问题和解法都可以总结成<strong>单串，双串，矩阵，无串</strong>四个小类别。</p>
+<p><em>以上内容侵删</em></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">线性动态规划</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/算法/线性动态规划//" class="article-tag-list-link color2">线性动态规划</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
     <article id="post-单串问题求解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -247,117 +355,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%E6%B1%82%E8%A7%A3/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-单串问题：与其它算法配合" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%EF%BC%9A%E4%B8%8E%E5%85%B6%E5%AE%83%E7%AE%97%E6%B3%95%E9%85%8D%E5%90%88/">单串问题：与其它算法配合</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%EF%BC%9A%E4%B8%8E%E5%85%B6%E5%AE%83%E7%AE%97%E6%B3%95%E9%85%8D%E5%90%88/" class="archive-article-date">
-  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>线性动态规划经常要与其它算法和数据结构配合来解决问题，例如二分，贪心，排序的等。</p>
-<ul>
-<li>形成字符串的最短路径 —— DP + 二分，贪心</li>
-<li>最大整除子集 —— 先对数组排序</li>
-</ul>
-<p><strong>形成字符串的最短路径</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-8df93ae5ba0a70b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">shortestWay</span>(<span class="params">self, source: <span class="built_in">str</span>, target: <span class="built_in">str</span></span>) -&gt; int:</span></span><br><span class="line">        s = source * <span class="built_in">len</span>(target)</span><br><span class="line">        r, cur = <span class="built_in">len</span>(s)-<span class="number">1</span>, <span class="built_in">len</span>(target)-<span class="number">1</span> </span><br><span class="line">        <span class="keyword">while</span> cur &gt;= <span class="number">0</span> <span class="keyword">and</span> r &gt;= <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">if</span> s[r] == target[cur]:</span><br><span class="line">                cur = cur - <span class="number">1</span></span><br><span class="line">            r = r - <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> cur &gt;= <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">len</span>(target) - (r+<span class="number">1</span>)//<span class="built_in">len</span>(source)</span><br></pre></td></tr></table></figure>
-<p>思路不难，自己走一遍就知道。<br><img src="https://upload-images.jianshu.io/upload_images/19449585-dc53d3af1a1e8f3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><strong>最大整除子集</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-42d5d1be620a1835.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">largestDivisibleSubset</span>(<span class="params">self, nums: List[<span class="built_in">int</span>]</span>) -&gt; List[int]:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> nums:</span><br><span class="line">            <span class="keyword">return</span> []</span><br><span class="line">        nums.sort()</span><br><span class="line">        dp = [[i] <span class="keyword">for</span> i <span class="keyword">in</span> nums]</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(nums)):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i-<span class="number">1</span>, -<span class="number">1</span>, -<span class="number">1</span>):</span><br><span class="line">                <span class="keyword">if</span> nums[i] % nums[j] == <span class="number">0</span>:</span><br><span class="line">                    <span class="keyword">if</span> <span class="built_in">len</span>(dp[j]) + <span class="number">1</span> &gt; <span class="built_in">len</span>(dp[i]):</span><br><span class="line">                        dp[i] = dp[j] + [nums[i]]</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">max</span>(dp, key=<span class="built_in">len</span>)</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-871e5539c53a8adb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><strong>最长有效括号</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-d8f48c4e62f57cd9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p><strong>解题思路:</strong><br>栈思想，存储左括号的下标。特别的要当做在-1的位置有1个左括号，以避免越界。</p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">longestValidParentheses</span>(<span class="params">self, s: <span class="built_in">str</span></span>) -&gt; int:</span></span><br><span class="line">        ans=<span class="number">0</span>       <span class="comment"># 最大合法长度(返回值)</span></span><br><span class="line">        stack=[-<span class="number">1</span>,]  <span class="comment"># stack[0]:合法括号起点-1 ; stack[1:]尚未匹配左括号下标</span></span><br><span class="line">        <span class="keyword">for</span> i,ch <span class="keyword">in</span> <span class="built_in">enumerate</span>(s):</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;(&#x27;</span>==ch:  <span class="comment"># 左括号</span></span><br><span class="line">                stack.append(i)</span><br><span class="line">            <span class="keyword">elif</span> <span class="built_in">len</span>(stack)&gt;<span class="number">1</span>:  <span class="comment"># 右括号，且有成对左括号</span></span><br><span class="line">                stack.pop()     <span class="comment"># 成对匹配</span></span><br><span class="line">                ans = <span class="built_in">max</span>(ans, i - stack[-<span class="number">1</span>])</span><br><span class="line">            <span class="keyword">else</span>:   <span class="comment"># 非法的右括号</span></span><br><span class="line">                stack[<span class="number">0</span>]=i</span><br><span class="line">               </span><br><span class="line">        <span class="keyword">return</span> ans</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-ff4def6f3eada859.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><strong>等差数列划分</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-ab38d434a6c65755.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>注意看题目，要求子数组的下标连续。</p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">numberOfArithmeticSlices</span>(<span class="params">self, A: List[<span class="built_in">int</span>]</span>) -&gt; int:</span></span><br><span class="line">        n = <span class="built_in">len</span>(A)</span><br><span class="line">        <span class="keyword">if</span> n &lt; <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        dp = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n)]</span><br><span class="line">        sum_ans = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>,n):</span><br><span class="line">            <span class="keyword">if</span> A[i]-A[i-<span class="number">1</span>] == A[i-<span class="number">1</span>]-A[i-<span class="number">2</span>]:</span><br><span class="line">                dp[i] = dp[i-<span class="number">1</span>] + <span class="number">1</span></span><br><span class="line">                sum_ans += dp[i]</span><br><span class="line">        <span class="keyword">return</span> sum_ans</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-8a5f553d48979f29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><strong>解码方法</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-1f088fd2fc75b72a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-607d52b89673b6d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">线性动态规划</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/算法/线性动态规划//" class="article-tag-list-link color2">线性动态规划</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%EF%BC%9A%E4%B8%8E%E5%85%B6%E5%AE%83%E7%AE%97%E6%B3%95%E9%85%8D%E5%90%88/">展开全文 >></a>
         </p>
       
 
@@ -587,114 +584,6 @@
 
 
   
-    <article id="post-单串问题：打家劫舍系列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%EF%BC%9A%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/">单串问题：打家劫舍系列</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%EF%BC%9A%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/" class="archive-article-date">
-  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>打家劫舍主要是不相邻子序列的最大和问题，以及若干变形</p>
-<ul>
-<li>打家劫舍</li>
-<li>打家劫舍 II</li>
-<li>删除与获得点数</li>
-<li>3n 块披萨</li>
-</ul>
-<p><strong>打家劫舍</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-b279cba4322573a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">rob</span>(<span class="params">self, nums: List[<span class="built_in">int</span>]</span>) -&gt; int:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">max</span>(nums[<span class="number">1</span>],nums[<span class="number">0</span>])</span><br><span class="line">        dp=[<span class="number">0</span>]*<span class="built_in">len</span>(nums)</span><br><span class="line">        dp[<span class="number">0</span>]=nums[<span class="number">0</span>]</span><br><span class="line">        dp[<span class="number">1</span>]=<span class="built_in">max</span>(nums[<span class="number">1</span>],nums[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>,<span class="built_in">len</span>(nums)):</span><br><span class="line">            dp[i]=<span class="built_in">max</span>(dp[i-<span class="number">1</span>],dp[i-<span class="number">2</span>]+nums[i])</span><br><span class="line">        res=<span class="built_in">max</span>(dp)</span><br><span class="line">        <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-3cc9d627b4dbac2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><strong>打家劫舍</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-6e04ad222fd4c583.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">rob</span>(<span class="params">self, nums: List[<span class="built_in">int</span>]</span>) -&gt; int:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">max</span>(nums[<span class="number">0</span>],nums[<span class="number">1</span>])</span><br><span class="line">        a=nums[:-<span class="number">1</span>]</span><br><span class="line">        res1=rob(a)</span><br><span class="line">        b=nums[<span class="number">1</span>:]</span><br><span class="line">        res2=rob(b)</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">max</span>(res1,res2)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rob</span>(<span class="params"> nums</span>) :</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">max</span>(nums[<span class="number">1</span>],nums[<span class="number">0</span>])</span><br><span class="line">        dp=[<span class="number">0</span>]*<span class="built_in">len</span>(nums)</span><br><span class="line">        dp[<span class="number">0</span>]=nums[<span class="number">0</span>]</span><br><span class="line">        dp[<span class="number">1</span>]=<span class="built_in">max</span>(nums[<span class="number">1</span>],nums[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>,<span class="built_in">len</span>(nums)):</span><br><span class="line">            dp[i]=<span class="built_in">max</span>(dp[i-<span class="number">1</span>],dp[i-<span class="number">2</span>]+nums[i])</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">return</span> dp[-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
-<p><strong>删除与获得点数</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-f87a134b22650821.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/delete-and-earn/solution/">https://leetcode-cn.com/problems/delete-and-earn/solution/</a></p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">deleteAndEarn</span>(<span class="params">self, nums: List[<span class="built_in">int</span>]</span>) -&gt; int:</span></span><br><span class="line">        n=<span class="built_in">len</span>(nums)</span><br><span class="line">        <span class="keyword">if</span> n==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">if</span> n==<span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">        count=[<span class="number">0</span>]*(<span class="built_in">max</span>(nums)+<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> nums:</span><br><span class="line">            count[i]+=i</span><br><span class="line"></span><br><span class="line">        cur=[<span class="number">0</span>]*<span class="built_in">len</span>(count)</span><br><span class="line">        cur[<span class="number">0</span>],cur[<span class="number">1</span>]=<span class="number">0</span>,count[<span class="number">1</span>]</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>,<span class="built_in">len</span>(count)):</span><br><span class="line">            cur[i]=<span class="built_in">max</span>(cur[i-<span class="number">1</span>],cur[i-<span class="number">2</span>]+count[i])</span><br><span class="line">        <span class="keyword">return</span> cur[-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
-<p>通过情况：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-81e41eede34469ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><strong>3n块披萨</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-959c28a4a004fdb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-8c64b7645be28e8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-aa8c2aaeea77b158.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-de8866dd5d5d65d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>太难，后续再给出题解：<br><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/pizza-with-3n-slices/solution/">https://leetcode-cn.com/problems/pizza-with-3n-slices/solution/</a></p>
-
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">线性动态规划</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/算法/线性动态规划//" class="article-tag-list-link color2">线性动态规划</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%EF%BC%9A%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
     <article id="post-单串问题：最大子数组和系列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -785,6 +674,101 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%EF%BC%9A%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C%E7%B3%BB%E5%88%97/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-在排序算法中，稳定的和不稳定的是什么意思" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/06/%E5%9C%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B8%AD%EF%BC%8C%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%92%8C%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/">js原型链在排序算法中，稳定的和不稳定的是什么意思</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/06/%E5%9C%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B8%AD%EF%BC%8C%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%92%8C%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/" class="archive-article-date">
+  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_29831163/article/details/91350911">https://blog.csdn.net/qq_29831163/article/details/91350911</a></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据结构和算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/数据结构和算法//" class="article-tag-list-link color3">数据结构和算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/06/%E5%9C%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B8%AD%EF%BC%8C%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%92%8C%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/">展开全文 >></a>
         </p>
       
 
@@ -934,19 +918,19 @@
 
 
   
-    <article id="post-在排序算法中，稳定的和不稳定的是什么意思" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-单串问题：打家劫舍系列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/%E5%9C%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B8%AD%EF%BC%8C%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%92%8C%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/">js原型链在排序算法中，稳定的和不稳定的是什么意思</a>
+      <a class="article-title" href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%EF%BC%9A%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/">单串问题：打家劫舍系列</a>
     </h1>
   
 
         
-        <a href="/2020/12/06/%E5%9C%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B8%AD%EF%BC%8C%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%92%8C%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/" class="archive-article-date">
+        <a href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%EF%BC%9A%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/" class="archive-article-date">
   	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
 </a>
         
@@ -954,7 +938,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_29831163/article/details/91350911">https://blog.csdn.net/qq_29831163/article/details/91350911</a></p>
+        <p>打家劫舍主要是不相邻子序列的最大和问题，以及若干变形</p>
+<ul>
+<li>打家劫舍</li>
+<li>打家劫舍 II</li>
+<li>删除与获得点数</li>
+<li>3n 块披萨</li>
+</ul>
+<p><strong>打家劫舍</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-b279cba4322573a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">rob</span>(<span class="params">self, nums: List[<span class="built_in">int</span>]</span>) -&gt; int:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">max</span>(nums[<span class="number">1</span>],nums[<span class="number">0</span>])</span><br><span class="line">        dp=[<span class="number">0</span>]*<span class="built_in">len</span>(nums)</span><br><span class="line">        dp[<span class="number">0</span>]=nums[<span class="number">0</span>]</span><br><span class="line">        dp[<span class="number">1</span>]=<span class="built_in">max</span>(nums[<span class="number">1</span>],nums[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>,<span class="built_in">len</span>(nums)):</span><br><span class="line">            dp[i]=<span class="built_in">max</span>(dp[i-<span class="number">1</span>],dp[i-<span class="number">2</span>]+nums[i])</span><br><span class="line">        res=<span class="built_in">max</span>(dp)</span><br><span class="line">        <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-3cc9d627b4dbac2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><strong>打家劫舍</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-6e04ad222fd4c583.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">rob</span>(<span class="params">self, nums: List[<span class="built_in">int</span>]</span>) -&gt; int:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">max</span>(nums[<span class="number">0</span>],nums[<span class="number">1</span>])</span><br><span class="line">        a=nums[:-<span class="number">1</span>]</span><br><span class="line">        res1=rob(a)</span><br><span class="line">        b=nums[<span class="number">1</span>:]</span><br><span class="line">        res2=rob(b)</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">max</span>(res1,res2)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rob</span>(<span class="params"> nums</span>) :</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums)==<span class="number">2</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">max</span>(nums[<span class="number">1</span>],nums[<span class="number">0</span>])</span><br><span class="line">        dp=[<span class="number">0</span>]*<span class="built_in">len</span>(nums)</span><br><span class="line">        dp[<span class="number">0</span>]=nums[<span class="number">0</span>]</span><br><span class="line">        dp[<span class="number">1</span>]=<span class="built_in">max</span>(nums[<span class="number">1</span>],nums[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>,<span class="built_in">len</span>(nums)):</span><br><span class="line">            dp[i]=<span class="built_in">max</span>(dp[i-<span class="number">1</span>],dp[i-<span class="number">2</span>]+nums[i])</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">return</span> dp[-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+<p><strong>删除与获得点数</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-f87a134b22650821.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/delete-and-earn/solution/">https://leetcode-cn.com/problems/delete-and-earn/solution/</a></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">deleteAndEarn</span>(<span class="params">self, nums: List[<span class="built_in">int</span>]</span>) -&gt; int:</span></span><br><span class="line">        n=<span class="built_in">len</span>(nums)</span><br><span class="line">        <span class="keyword">if</span> n==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">if</span> n==<span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">        count=[<span class="number">0</span>]*(<span class="built_in">max</span>(nums)+<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> nums:</span><br><span class="line">            count[i]+=i</span><br><span class="line"></span><br><span class="line">        cur=[<span class="number">0</span>]*<span class="built_in">len</span>(count)</span><br><span class="line">        cur[<span class="number">0</span>],cur[<span class="number">1</span>]=<span class="number">0</span>,count[<span class="number">1</span>]</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>,<span class="built_in">len</span>(count)):</span><br><span class="line">            cur[i]=<span class="built_in">max</span>(cur[i-<span class="number">1</span>],cur[i-<span class="number">2</span>]+count[i])</span><br><span class="line">        <span class="keyword">return</span> cur[-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+<p>通过情况：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-81e41eede34469ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><strong>3n块披萨</strong><br><img src="https://upload-images.jianshu.io/upload_images/19449585-959c28a4a004fdb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-8c64b7645be28e8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-aa8c2aaeea77b158.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-de8866dd5d5d65d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>太难，后续再给出题解：<br><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/pizza-with-3n-slices/solution/">https://leetcode-cn.com/problems/pizza-with-3n-slices/solution/</a></p>
 
       
       
@@ -969,11 +966,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据结构和算法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">线性动态规划</a>
         		</li>
       		
 		</ul>
@@ -985,11 +982,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端/数据结构和算法//" class="article-tag-list-link color3">数据结构和算法</a>
+        			<a href="/categories/算法/线性动态规划//" class="article-tag-list-link color2">线性动态规划</a>
         		</li>
       		
 		</ul>
@@ -998,7 +995,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/06/%E5%9C%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B8%AD%EF%BC%8C%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%92%8C%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/12/06/%E5%8D%95%E4%B8%B2%E9%97%AE%E9%A2%98%EF%BC%9A%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/">展开全文 >></a>
         </p>
       
 
@@ -1378,15 +1375,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">移动端布局</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">移动端布局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vscode插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1395,10 +1396,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">线性动态规划</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
