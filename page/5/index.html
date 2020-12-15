@@ -239,100 +239,6 @@
 
 
   
-    <article id="post-react性能优化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/react%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">react性能优化</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/06/react%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" class="archive-article-date">
-  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/react//" class="article-tag-list-link color1">react</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/06/react%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
     <article id="post-react的生命周期" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -428,19 +334,19 @@
 
 
   
-    <article id="post-react组件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-react性能优化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/react%E7%BB%84%E4%BB%B6/">react组件</a>
+      <a class="article-title" href="/2020/12/06/react%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">react性能优化</a>
     </h1>
   
 
         
-        <a href="/2020/12/06/react%E7%BB%84%E4%BB%B6/" class="archive-article-date">
+        <a href="/2020/12/06/react%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" class="archive-article-date">
   	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
 </a>
         
@@ -448,22 +354,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li>第一种是函数式组件<br>返回的是ui<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./index.css&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">&#x27;./App&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> reportWebVitals <span class="keyword">from</span> <span class="string">&#x27;./reportWebVitals&#x27;</span>;</span><br><span class="line"><span class="comment">// 函数式组件</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Children</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> title = <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>fubiaoti<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">  <span class="keyword">let</span> weather=<span class="string">&quot;下雨&quot;</span></span><br><span class="line">  <span class="keyword">let</span> isgo = weather==<span class="string">&#x27;下雨&#x27;</span>?<span class="string">&quot;不出门&quot;</span>:<span class="string">&quot;出门&quot;</span></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;h1&gt;</span><br><span class="line">        hello</span><br><span class="line">        &#123;title&#125;</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">          是否出门？</span><br><span class="line">          &lt;span&gt;&#123;isgo&#125;&lt;/span&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;Children /&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;#root&quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<img src="https://upload-images.jianshu.io/upload_images/19449585-aba0e4182c0bff3b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>函数式组件中通过pros传入参数：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Children</span>(<span class="params">props</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(props)</span><br><span class="line">  <span class="keyword">let</span> title = <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>fubiaoti<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">  <span class="keyword">let</span> weather=props.weather</span><br><span class="line">  <span class="keyword">let</span> isgo = weather==<span class="string">&#x27;下雨&#x27;</span>?<span class="string">&quot;不出门&quot;</span>:<span class="string">&quot;出门&quot;</span></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;h1&gt;</span><br><span class="line">        hello</span><br><span class="line">        &#123;title&#125;</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">          是否出门？</span><br><span class="line">          &lt;span&gt;&#123;isgo&#125;&lt;/span&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;Children weather=<span class="string">&quot;不下雨&quot;</span>/&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;#root&quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<img src="https://upload-images.jianshu.io/upload_images/19449585-707d2848cdfcf19f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
-</ol>
-<ol start="2">
-<li>类组件<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./index.css&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">&#x27;./App&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> reportWebVitals <span class="keyword">from</span> <span class="string">&#x27;./reportWebVitals&#x27;</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Hello</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="function"><span class="title">render</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;</span><br><span class="line">          hello</span><br><span class="line">        &lt;/h1&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;Hello /&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;#root&quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-类组件也可以再传参。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Hello</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span></span>&#123;</span><br><span class="line"> </span><br><span class="line">  <span class="function"><span class="title">render</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">this</span>)</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;</span><br><span class="line">          hello</span><br><span class="line">        &lt;/h1&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;Hello weather=<span class="string">&quot;taiyang&quot;</span>/&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;#root&quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-在组件里面还可以再设置组件,叫复合组件：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Children</span>(<span class="params">props</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(props)</span><br><span class="line">  <span class="keyword">let</span> title = <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>fubiaoti<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">  <span class="keyword">let</span> weather=props.weather</span><br><span class="line">  <span class="keyword">let</span> isgo = weather==<span class="string">&#x27;下雨&#x27;</span>?<span class="string">&quot;不出门&quot;</span>:<span class="string">&quot;出门&quot;</span></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;h1&gt;</span><br><span class="line">        hello</span><br><span class="line">        &#123;title&#125;</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">          是否出门？</span><br><span class="line">          &lt;span&gt;&#123;isgo&#125;&lt;/span&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Hello</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="function"><span class="title">render</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;</span><br><span class="line">          hello</span><br><span class="line">        &lt;/h1&gt;</span><br><span class="line">        &lt;h1&gt;</span><br><span class="line">          hello:&#123;<span class="built_in">this</span>.props.name&#125;</span><br><span class="line">        &lt;/h1&gt;</span><br><span class="line">        &lt;Children weather=&#123;<span class="built_in">this</span>.props.weather&#125;/&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ReactDOM.render(</span></span><br><span class="line"><span class="comment">//   &lt;Children weather=&quot;不下雨&quot;/&gt;,</span></span><br><span class="line"><span class="comment">//   document.querySelector(&quot;#root&quot;)</span></span><br><span class="line"><span class="comment">// )</span></span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;Hello na=<span class="string">&quot;miao&quot;</span> weather=<span class="string">&quot;buxiayu&quot;</span>/&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;#root&quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>类组件和函数式组件的区别是什么？</p>
-</blockquote>
-</li>
-</ol>
-<p>函数里写函数非常不方便，事件都是方法，写在函数里不方便，有事件就尽量用类组件，叫动态组件，会有交互或者数据修改；如果内容只是传入参数，就用函数式组件，叫静态组件。</p>
-<h3 id="函数式组件能实现的类组件都可以实现，类组件能实现的函数式组件不一定能实现。"><a href="#函数式组件能实现的类组件都可以实现，类组件能实现的函数式组件不一定能实现。" class="headerlink" title="函数式组件能实现的类组件都可以实现，类组件能实现的函数式组件不一定能实现。"></a>函数式组件能实现的类组件都可以实现，类组件能实现的函数式组件不一定能实现。</h3>
+        
       
       
 
@@ -506,7 +397,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/06/react%E7%BB%84%E4%BB%B6/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/12/06/react%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">展开全文 >></a>
         </p>
       
 
@@ -827,19 +718,19 @@
 
 
   
-    <article id="post-什么是线性动态规划系列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-react组件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/">什么是线性动态规划</a>
+      <a class="article-title" href="/2020/12/06/react%E7%BB%84%E4%BB%B6/">react组件</a>
     </h1>
   
 
         
-        <a href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/" class="archive-article-date">
+        <a href="/2020/12/06/react%E7%BB%84%E4%BB%B6/" class="archive-article-date">
   	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
 </a>
         
@@ -847,21 +738,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>线性动态规划的主要特点是状态的推导是按照问题规模 i 从小到大依次推过去的，较大规模的问题的解依赖较小规模的问题的解。</p>
-<p>这里问题规模为 i 的含义是考虑前 i 个元素 [0..i] 时问题的解。</p>
-<p>状态定义：</p>
+        <ol>
+<li>第一种是函数式组件<br>返回的是ui<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./index.css&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">&#x27;./App&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> reportWebVitals <span class="keyword">from</span> <span class="string">&#x27;./reportWebVitals&#x27;</span>;</span><br><span class="line"><span class="comment">// 函数式组件</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Children</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> title = <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>fubiaoti<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">  <span class="keyword">let</span> weather=<span class="string">&quot;下雨&quot;</span></span><br><span class="line">  <span class="keyword">let</span> isgo = weather==<span class="string">&#x27;下雨&#x27;</span>?<span class="string">&quot;不出门&quot;</span>:<span class="string">&quot;出门&quot;</span></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;h1&gt;</span><br><span class="line">        hello</span><br><span class="line">        &#123;title&#125;</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">          是否出门？</span><br><span class="line">          &lt;span&gt;&#123;isgo&#125;&lt;/span&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;Children /&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;#root&quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<img src="https://upload-images.jianshu.io/upload_images/19449585-aba0e4182c0bff3b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>函数式组件中通过pros传入参数：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Children</span>(<span class="params">props</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(props)</span><br><span class="line">  <span class="keyword">let</span> title = <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>fubiaoti<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">  <span class="keyword">let</span> weather=props.weather</span><br><span class="line">  <span class="keyword">let</span> isgo = weather==<span class="string">&#x27;下雨&#x27;</span>?<span class="string">&quot;不出门&quot;</span>:<span class="string">&quot;出门&quot;</span></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;h1&gt;</span><br><span class="line">        hello</span><br><span class="line">        &#123;title&#125;</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">          是否出门？</span><br><span class="line">          &lt;span&gt;&#123;isgo&#125;&lt;/span&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;Children weather=<span class="string">&quot;不下雨&quot;</span>/&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;#root&quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<img src="https://upload-images.jianshu.io/upload_images/19449585-707d2848cdfcf19f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
+</ol>
+<ol start="2">
+<li>类组件<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./index.css&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">&#x27;./App&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> reportWebVitals <span class="keyword">from</span> <span class="string">&#x27;./reportWebVitals&#x27;</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Hello</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="function"><span class="title">render</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;</span><br><span class="line">          hello</span><br><span class="line">        &lt;/h1&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;Hello /&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;#root&quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+类组件也可以再传参。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Hello</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span></span>&#123;</span><br><span class="line"> </span><br><span class="line">  <span class="function"><span class="title">render</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">this</span>)</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;</span><br><span class="line">          hello</span><br><span class="line">        &lt;/h1&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;Hello weather=<span class="string">&quot;taiyang&quot;</span>/&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;#root&quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+在组件里面还可以再设置组件,叫复合组件：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Children</span>(<span class="params">props</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(props)</span><br><span class="line">  <span class="keyword">let</span> title = <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>fubiaoti<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">  <span class="keyword">let</span> weather=props.weather</span><br><span class="line">  <span class="keyword">let</span> isgo = weather==<span class="string">&#x27;下雨&#x27;</span>?<span class="string">&quot;不出门&quot;</span>:<span class="string">&quot;出门&quot;</span></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;h1&gt;</span><br><span class="line">        hello</span><br><span class="line">        &#123;title&#125;</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">          是否出门？</span><br><span class="line">          &lt;span&gt;&#123;isgo&#125;&lt;/span&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Hello</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="function"><span class="title">render</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;</span><br><span class="line">          hello</span><br><span class="line">        &lt;/h1&gt;</span><br><span class="line">        &lt;h1&gt;</span><br><span class="line">          hello:&#123;<span class="built_in">this</span>.props.name&#125;</span><br><span class="line">        &lt;/h1&gt;</span><br><span class="line">        &lt;Children weather=&#123;<span class="built_in">this</span>.props.weather&#125;/&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ReactDOM.render(</span></span><br><span class="line"><span class="comment">//   &lt;Children weather=&quot;不下雨&quot;/&gt;,</span></span><br><span class="line"><span class="comment">//   document.querySelector(&quot;#root&quot;)</span></span><br><span class="line"><span class="comment">// )</span></span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;Hello na=<span class="string">&quot;miao&quot;</span> weather=<span class="string">&quot;buxiayu&quot;</span>/&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">&quot;#root&quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>dp[n] := [0..n] 上问题的解</p>
+<p>类组件和函数式组件的区别是什么？</p>
 </blockquote>
-<p>状态转移：</p>
-<blockquote>
-<p>dp[n] = f(dp[n-1], …, dp[0])</p>
-</blockquote>
-<p>从以上状态定义和状态转移可以看出，大规模问题的状态只与较小规模的问题有关，而<strong>问题规模</strong>完全用一个变量 i 表示，i 的大小表示了问题规模的大小，因此从小到大推 i 直至推到 n，就得到了大规模问题的解，这就是线性动态规划的过程。</p>
-<p>按照问题的输入格式，线性动态规划解决的问题主要是<strong>单串，双串，矩阵</strong>上的问题，因为在单串，双串，矩阵上问题规模可以完全用位置表示，并且位置的大小就是问题规模的大小。因此从前往后推位置就相当于从小到大推问题规模。</p>
-<p>线性动态规划是动态规划中最基本的一类。问题的形式、dp 状态和方程的设计、以及与其它算法的结合上面变化很多。按照 dp 方程中各个维度的含义，可以大致总结出几个主流的问题类型。除此之外还有很多没有总结进来的变种问题，小众问题，和困难问题，这些问题的解法更多地需要结合自己的做题经验去积累，除此之外，常见的，主流的问题和解法都可以总结成<strong>单串，双串，矩阵，无串</strong>四个小类别。</p>
-<p><em>以上内容侵删</em></p>
-
+</li>
+</ol>
+<p>函数里写函数非常不方便，事件都是方法，写在函数里不方便，有事件就尽量用类组件，叫动态组件，会有交互或者数据修改；如果内容只是传入参数，就用函数式组件，叫静态组件。</p>
+<h3 id="函数式组件能实现的类组件都可以实现，类组件能实现的函数式组件不一定能实现。"><a href="#函数式组件能实现的类组件都可以实现，类组件能实现的函数式组件不一定能实现。" class="headerlink" title="函数式组件能实现的类组件都可以实现，类组件能实现的函数式组件不一定能实现。"></a>函数式组件能实现的类组件都可以实现，类组件能实现的函数式组件不一定能实现。</h3>
       
       
 
@@ -875,11 +767,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">线性动态规划</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
         		</li>
       		
 		</ul>
@@ -891,11 +783,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/算法/线性动态规划//" class="article-tag-list-link color2">线性动态规划</a>
+        			<a href="/categories/前端/react//" class="article-tag-list-link color1">react</a>
         		</li>
       		
 		</ul>
@@ -904,7 +796,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/12/06/react%E7%BB%84%E4%BB%B6/">展开全文 >></a>
         </p>
       
 
@@ -1008,6 +900,114 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E5%92%8C%E7%BB%84%E4%BB%B6%E5%8C%96/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-什么是线性动态规划系列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/">什么是线性动态规划</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/" class="archive-article-date">
+  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>线性动态规划的主要特点是状态的推导是按照问题规模 i 从小到大依次推过去的，较大规模的问题的解依赖较小规模的问题的解。</p>
+<p>这里问题规模为 i 的含义是考虑前 i 个元素 [0..i] 时问题的解。</p>
+<p>状态定义：</p>
+<blockquote>
+<p>dp[n] := [0..n] 上问题的解</p>
+</blockquote>
+<p>状态转移：</p>
+<blockquote>
+<p>dp[n] = f(dp[n-1], …, dp[0])</p>
+</blockquote>
+<p>从以上状态定义和状态转移可以看出，大规模问题的状态只与较小规模的问题有关，而<strong>问题规模</strong>完全用一个变量 i 表示，i 的大小表示了问题规模的大小，因此从小到大推 i 直至推到 n，就得到了大规模问题的解，这就是线性动态规划的过程。</p>
+<p>按照问题的输入格式，线性动态规划解决的问题主要是<strong>单串，双串，矩阵</strong>上的问题，因为在单串，双串，矩阵上问题规模可以完全用位置表示，并且位置的大小就是问题规模的大小。因此从前往后推位置就相当于从小到大推问题规模。</p>
+<p>线性动态规划是动态规划中最基本的一类。问题的形式、dp 状态和方程的设计、以及与其它算法的结合上面变化很多。按照 dp 方程中各个维度的含义，可以大致总结出几个主流的问题类型。除此之外还有很多没有总结进来的变种问题，小众问题，和困难问题，这些问题的解法更多地需要结合自己的做题经验去积累，除此之外，常见的，主流的问题和解法都可以总结成<strong>单串，双串，矩阵，无串</strong>四个小类别。</p>
+<p><em>以上内容侵删</em></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">线性动态规划</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/算法/线性动态规划//" class="article-tag-list-link color2">线性动态规划</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/06/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/">展开全文 >></a>
         </p>
       
 

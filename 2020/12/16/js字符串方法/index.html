@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>如何使用js | mxy</title>
+  <title>js字符串方法 | mxy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="length  indexOf()方法返回字符串中指定文本首次出现的索引（位置）： 12var str &#x3D; &quot;The full name of China&quot;;var pos &#x3D; str.indexOf(&quot;China&quot;); out: 17  lastIndexOf()方法返回字符串中指定文本最后出现的索引（位置）： 12var str &#x3D; &quot;The">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何使用js">
+<meta property="og:title" content="js字符串方法">
 <meta property="og:url" content="http://example.com/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="mxy">
 <meta property="og:description" content="length  indexOf()方法返回字符串中指定文本首次出现的索引（位置）： 12var str &#x3D; &quot;The full name of China&quot;;var pos &#x3D; str.indexOf(&quot;China&quot;); out: 17  lastIndexOf()方法返回字符串中指定文本最后出现的索引（位置）： 12var str &#x3D; &quot;The">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-15T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-15T13:20:16.983Z">
+<meta property="article:modified_time" content="2020-12-15T13:29:12.436Z">
 <meta property="article:author" content="Xinyu Miao">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="js">
@@ -154,7 +154,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      如何使用js
+      js字符串方法
     </h1>
   
 
@@ -177,9 +177,10 @@
 <li><p>lastIndexOf()方法返回字符串中指定文本最后出现的索引（位置）：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.lastIndexOf(<span class="string">&quot;China&quot;</span>);</span><br></pre></td></tr></table></figure>
 <p>out: 17</p>
+<p>如果未找到文本， indexOf() 和 lastIndexOf() 均返回 -1。</p>
 </li>
 </ol>
-<h5 id="如果未找到文本，-indexOf-和-lastIndexOf-均返回-1。"><a href="#如果未找到文本，-indexOf-和-lastIndexOf-均返回-1。" class="headerlink" title="如果未找到文本， indexOf() 和 lastIndexOf() 均返回 -1。"></a>如果未找到文本， indexOf() 和 lastIndexOf() 均返回 -1。</h5><p>两种方法都接受作为检索起始位置的第二个参数。</p>
+<p>两种方法都接受作为检索起始位置的第二个参数。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China is the People&#x27;s Republic of China.&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.indexOf(<span class="string">&quot;China&quot;</span>, <span class="number">18</span>);</span><br></pre></td></tr></table></figure>
 <p>out: 18</p>
 <p>lastIndexOf() 方法向后进行检索（从尾到头），这意味着：假如第二个参数是 50，则从位置 50 开始检索，直到字符串的起点。</p>
@@ -187,7 +188,8 @@
 <p>out: 17<br>4. search() 方法搜索特定值的字符串，并返回匹配的位置：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China is the People&#x27;s Republic of China.&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.search(<span class="string">&quot;locate&quot;</span>);</span><br></pre></td></tr></table></figure>
 <p>out: 17</p>
-<h5 id="两种方法，indexOf-与-search-，是相等的。这两种方法是不相等的。区别在于："><a href="#两种方法，indexOf-与-search-，是相等的。这两种方法是不相等的。区别在于：" class="headerlink" title="两种方法，indexOf() 与 search()，是相等的。这两种方法是不相等的。区别在于："></a>两种方法，indexOf() 与 search()，是相等的。这两种方法是不相等的。区别在于：</h5><ul>
+<p>两种方法，indexOf() 与 search()，是相等的。这两种方法是不相等的。区别在于：</p>
+<ul>
 <li>search() 方法无法设置第二个开始位置参数。</li>
 <li>indexOf() 方法无法设置更强大的搜索值（正则表达式）。</li>
 </ul>
@@ -274,6 +276,7 @@ res 的结果是：Banana</li>
 
 <p>charCodeAt() 方法返回字符串中指定索引的字符 unicode 编码：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;HELLO WORLD&quot;</span>;</span><br><span class="line"></span><br><span class="line">str.charCodeAt(<span class="number">0</span>);         <span class="comment">// 返回 72</span></span><br></pre></td></tr></table></figure>
+
 <ol start="13">
 <li>属性访问（Property Access）<br>ECMAScript 5 (2009) 允许对字符串的属性访问 [ ]：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;HELLO WORLD&quot;</span>;</span><br><span class="line">str[<span class="number">0</span>];                   <span class="comment">// 返回 H</span></span><br></pre></td></tr></table></figure>
 使用属性访问有点不太靠谱：</li>
@@ -376,14 +379,14 @@ res 的结果是：Banana</li>
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          如何使用js
+          js关键词
         
       </div>
     </a>
   
   
     <a href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E4%B9%89/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">如何使用js</div>
+      <div class="article-nav-title">js字符串转义</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -412,7 +415,7 @@ res 的结果是：Banana</li>
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="js字符串方法" data-title="如何使用js" data-url="http://example.com/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/"></div>
+	<div class="ds-thread" data-thread-key="js字符串方法" data-title="js字符串方法" data-url="http://example.com/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
