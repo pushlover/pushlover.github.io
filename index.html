@@ -60,7 +60,7 @@
 			</ul>
 		</nav>
                 <nav>
-   			总文章数 76
+   			总文章数 83
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -143,6 +143,110 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-github下载单个文件夹" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/17/github%E4%B8%8B%E8%BD%BD%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9/">github下载单个文件夹</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/17/github%E4%B8%8B%E8%BD%BD%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9/" class="archive-article-date">
+  	<time datetime="2020-12-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>mac:</p>
+</blockquote>
+<h5 id="1-安装svn"><a href="#1-安装svn" class="headerlink" title="1. 安装svn"></a>1. 安装svn</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install svn</span><br></pre></td></tr></table></figure>
+<p>查看版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">svn --version</span><br></pre></td></tr></table></figure>
+<h5 id="2-右击仓库中想要下载的文件夹，复制路径"><a href="#2-右击仓库中想要下载的文件夹，复制路径" class="headerlink" title="2. 右击仓库中想要下载的文件夹，复制路径"></a>2. 右击仓库中想要下载的文件夹，复制路径</h5><h5 id="3-将链接中-tree-master-改为-trunk"><a href="#3-将链接中-tree-master-改为-trunk" class="headerlink" title="3. 将链接中/tree/master/ 改为/trunk/"></a>3. 将链接中<code>/tree/master/</code> 改为<code>/trunk/</code></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">svn checkout https:&#x2F;&#x2F;github.com&#x2F;dghcs&#x2F;Personal-Homework&#x2F;trunk&#x2F;Andrew-Machine-Learning</span><br></pre></td></tr></table></figure>
+
+<p>等待下载就可以啦！一般默认是在个人会有一个文件夹。<br>如果文件夹的名字里面有中文括号（），请使用()进行转义，否则无法下载。</p>
+<p><strong>对于其他非master分支<br>当然，对于develop分支，也很容易：<br>只需要将 /trunk/ 换成 /branches/branchname/ 就行了，对于develop分支的需求, 就是 /branches/develop/.</strong></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/17/github%E4%B8%8B%E8%BD%BD%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
     <article id="post-js关键词" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -220,229 +324,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/12/16/js%E5%85%B3%E9%94%AE%E8%AF%8D/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-js字符串转义" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E4%B9%89/">js字符串转义</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E4%B9%89/" class="archive-article-date">
-  	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>反斜杠转义字符把特殊字符转换为字符串字符：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">代码    结果    描述</span><br><span class="line"> \&#39;     &#39;     单引号</span><br><span class="line"> \&quot;     &quot;     双引号</span><br><span class="line"> \\     \     反斜杠</span><br><span class="line"> \b     退格键</span><br><span class="line"> \f	换页</span><br><span class="line"> \n	新行</span><br><span class="line"> \r	回车</span><br><span class="line"> \t	水平制表符</span><br><span class="line"> \v	垂直制表符</span><br></pre></td></tr></table></figure>
-<p> 后六个转义字符最初设计用于控制打字机、电传打字机和传真机。它们在 HTML 中没有任何意义。</p>
-<hr>
-<blockquote>
-<p>长代码换行</p>
-</blockquote>
-<p>为了最佳可读性， 程序员们通常会避免每行代码超过 80 个字符串。</p>
-<p>如果某条 JavaScript 语句不适合一整行，那么最佳换行位置是某个运算符之后：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML =</span><br><span class="line"><span class="string">&quot;Hello Kitty.&quot;</span>;</span><br></pre></td></tr></table></figure>
-<p>可以修改成:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML = <span class="string">&quot;Hello \</span></span><br><span class="line"><span class="string">Kitty!&quot;</span>;</span><br></pre></td></tr></table></figure>
-<p>\ 方法并不是 ECMAScript (JavaScript) 标准。</p>
-<p>某些浏览器也不允许 \ 字符之后的空格。</p>
-<p>对长字符串换行的最安全做法（但是有点慢）是使用字符串加法：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML = <span class="string">&quot;Hello&quot;</span> + </span><br><span class="line"><span class="string">&quot;Kitty!&quot;</span>;</span><br></pre></td></tr></table></figure>
-<hr>
-<p>字符串可以是对象<br>通常，JavaScript 字符串是原始值，通过字面方式创建：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstName = <span class="string">&quot;Bill&quot;</span></span><br></pre></td></tr></table></figure>
-<p>但是字符串也可通过关键词 new 定义为对象：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstName = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>)</span><br><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> x = <span class="string">&quot;Bill&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// typeof x 将返回 string</span></span><br><span class="line"><span class="comment">// typeof y 将返回 object</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="请不要把字符串创建为对象-它会拖慢执行速度。"><a href="#请不要把字符串创建为对象-它会拖慢执行速度。" class="headerlink" title="请不要把字符串创建为对象!!!!它会拖慢执行速度。"></a>请不要把字符串创建为对象!!!!它会拖慢执行速度。</h5><p>new 关键字使代码复杂化。也可能产生一些意想不到的结果：</p>
-<p>当使用 == 相等运算符时，相等字符串是相等的：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> x = <span class="string">&quot;Bill&quot;</span>;             </span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// (x == y) 为 true，因为 x 和 y 的值相等</span></span><br></pre></td></tr></table></figure>
-
-<p>当使用 === 运算符时，相等字符串是不相等的，因为 === 运算符需要类型和值同时相等。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> x = <span class="string">&quot;Bill&quot;</span>;             </span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// (x === y) 为 false，因为 x 和 y 的类型不同（字符串与对象）</span></span><br></pre></td></tr></table></figure>
-
-<p>甚至更糟。对象无法比较：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);             </span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// (x == y) 为 false，因为 x 和 y 是不同的对象</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);             </span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// (x === y) 为 false，因为 x 和 y 是不同的对象</span></span><br></pre></td></tr></table></figure>
-
-<p>请注意 (x==y) 与 (x===y) 的区别。</p>
-<h4 id="JavaScript-对象无法进行对比，比较两个-JavaScript-将始终返回-false。"><a href="#JavaScript-对象无法进行对比，比较两个-JavaScript-将始终返回-false。" class="headerlink" title="JavaScript 对象无法进行对比，比较两个 JavaScript 将始终返回 false。"></a>JavaScript 对象无法进行对比，比较两个 JavaScript 将始终返回 false。</h4>
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E4%B9%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-js数字" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/16/js%E6%95%B0%E5%AD%97/">js数字</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/16/js%E6%95%B0%E5%AD%97/" class="archive-article-date">
-  	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_numbers.asp">https://www.w3school.com.cn/js/js_numbers.asp</a></p>
-
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/16/js%E6%95%B0%E5%AD%97/">展开全文 >></a>
         </p>
       
 
@@ -692,19 +573,19 @@ res 的结果是：Banana</li>
 
 
   
-    <article id="post-对象属性的访问方式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-js字符串转义" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/16/%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%9A%84%E8%AE%BF%E9%97%AE%E6%96%B9%E5%BC%8F/">js对象属性的访问方式</a>
+      <a class="article-title" href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E4%B9%89/">js字符串转义</a>
     </h1>
   
 
         
-        <a href="/2020/12/16/%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%9A%84%E8%AE%BF%E9%97%AE%E6%96%B9%E5%BC%8F/" class="archive-article-date">
+        <a href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E4%B9%89/" class="archive-article-date">
   	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
 </a>
         
@@ -712,414 +593,41 @@ res 的结果是：Banana</li>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="1-对象属性"><a href="#1-对象属性" class="headerlink" title="1. 对象属性"></a>1. 对象属性</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>对象属性的两种访问方式<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="comment">// 将对象赋给变量</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> Person=&#123;<span class="attr">firstName</span>:<span class="string">&quot;Bill&quot;</span>, <span class="attr">lastName</span>:<span class="string">&quot;Gates&quot;</span>, <span class="attr">age</span>:<span class="number">62</span>, <span class="attr">eyeColor</span>:<span class="string">&quot;blue&quot;</span>&#125;;</span></span><br><span class="line"><span class="javascript">        <span class="comment">// 第一种方式</span></span></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.write(Person[<span class="string">&quot;firstName&quot;</span>]);</span></span><br><span class="line"><span class="javascript">        <span class="comment">// 第二种方式</span></span></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.write(Person.lastName);</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">out</span>:</span><br><span class="line"><span class="selector-tag">BillGates</span></span><br><span class="line"><span class="selector-tag">BillGates</span></span><br></pre></td></tr></table></figure>
+        <p>反斜杠转义字符把特殊字符转换为字符串字符：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">代码    结果    描述</span><br><span class="line"> \&#39;     &#39;     单引号</span><br><span class="line"> \&quot;     &quot;     双引号</span><br><span class="line"> \\     \     反斜杠</span><br><span class="line"> \b     退格键</span><br><span class="line"> \f	换页</span><br><span class="line"> \n	新行</span><br><span class="line"> \r	回车</span><br><span class="line"> \t	水平制表符</span><br><span class="line"> \v	垂直制表符</span><br></pre></td></tr></table></figure>
+<p> 后六个转义字符最初设计用于控制打字机、电传打字机和传真机。它们在 HTML 中没有任何意义。</p>
 <hr>
-<h5 id="2-对象方法"><a href="#2-对象方法" class="headerlink" title="2. 对象方法"></a>2. 对象方法</h5><p>方法以函数定义被存储在属性中。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">  firstName: <span class="string">&quot;Bill&quot;</span>,</span><br><span class="line">  lastName : <span class="string">&quot;Gates&quot;</span>,</span><br><span class="line">  id       : <span class="number">678</span>,</span><br><span class="line">  fullName : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">this</span>.firstName + <span class="string">&quot; &quot;</span> + <span class="built_in">this</span>.lastName;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">name = person.fullName();</span><br></pre></td></tr></table></figure>
-<p>如果您不使用 () 访问 fullName 方法，则将返回函数定义：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">name = person.fullName;</span><br></pre></td></tr></table></figure>
-<h5 id="请不要把字符串、数值和布尔值声明为对象！"><a href="#请不要把字符串、数值和布尔值声明为对象！" class="headerlink" title="请不要把字符串、数值和布尔值声明为对象！"></a>请不要把字符串、数值和布尔值声明为对象！</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> <span class="built_in">String</span>();        <span class="comment">// 把 x 声明为 String 对象</span></span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">Number</span>();        <span class="comment">// 把 y 声明为 Number 对象</span></span><br><span class="line"><span class="keyword">var</span> z = <span class="keyword">new</span> <span class="built_in">Boolean</span>();       <span class="comment">//	把 z 声明为 Boolean 对象</span></span><br></pre></td></tr></table></figure>
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/16/%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%9A%84%E8%AE%BF%E9%97%AE%E6%96%B9%E5%BC%8F/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-js数字方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/15/js%E6%95%B0%E5%AD%97%E6%96%B9%E6%B3%95/">js数字方法</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/15/js%E6%95%B0%E5%AD%97%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-12-15T13:49:35.495Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h6 id="https-www-w3school-com-cn-js-js-number-methods-asp"><a href="#https-www-w3school-com-cn-js-js-number-methods-asp" class="headerlink" title="https://www.w3school.com.cn/js/js_number_methods.asp"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_number_methods.asp">https://www.w3school.com.cn/js/js_number_methods.asp</a></h6>
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">移动端布局</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/移动端布局//" class="article-tag-list-link color1">移动端布局</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/15/js%E6%95%B0%E5%AD%97%E6%96%B9%E6%B3%95/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-js使用方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/14/js%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">如何使用js</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/14/js%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-12-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h5 id="有三种"><a href="#有三种" class="headerlink" title="有三种"></a>有三种</h5><ol>
-<li>脚本可被放置与 HTML 页面的 <body> 中。</li>
-<li>脚本可被放置与 HTML 页面的 <head> 部分中。</li>
-<li>脚本可放置与外部文件中：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">&quot;myScript.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_shiyong.asp">https://www.w3school.com.cn/js/js_shiyong.asp</a></li>
-</ol>
-
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/14/js%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-js输出" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/14/js%E8%BE%93%E5%87%BA/">js输出</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/14/js%E8%BE%93%E5%87%BA/" class="archive-article-date">
-  	<time datetime="2020-12-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h5 id="有4种："><a href="#有4种：" class="headerlink" title="有4种："></a>有4种：</h5><ol>
-<li><code>console.log()</code></li>
-<li><code>alert() 弹出警告框</code></li>
-<li><code>document.write() 显示在html页面中</code></li>
-<li><code>使用 innerHTML</code><br>如需访问 HTML 元素，JavaScript 可使用 document。getElementById(id) 方法。<br>id 属性定义 HTML 元素。innerHTML 属性定义 HTML 内容：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>js输出<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">   </span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span> = <span class="string">&quot;demo&quot;</span>&gt;</span>我<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML=<span class="number">5</span>+<span class="number">6</span>;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-出于测试目的，使用 document.write() 比较方便：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.write(<span class="number">5</span> + <span class="number">6</span>);</span><br></pre></td></tr></table></figure>
-注意:在 HTML 文档完全加载后使用 document.write() 将删除所有已有的 HTML ：</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_output.asp">https://www.w3school.com.cn/js/js_output.asp</a></p>
-
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/14/js%E8%BE%93%E5%87%BA/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-线程和进程的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/%E7%BA%BF%E7%A8%8B%E5%92%8C%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/">线程和进程的区别</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/06/%E7%BA%BF%E7%A8%8B%E5%92%8C%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/" class="archive-article-date">
-  	<time datetime="2020-12-05T17:00:34.596Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>进程：</p>
-</blockquote>
-<p>在电脑上，每打开一个软件，就自动会产生一个进程；就是系统分配资源给进程，是电脑分配资源的最小单位。</p>
 <blockquote>
-<p>线程：</p>
+<p>长代码换行</p>
 </blockquote>
-<p>以网易云音乐为例，每打开一个功能就会自动产生一个线程，可以一边播放一边看评论，线程必须以进程为依托，是进程分配资源的单位。</p>
-<p>不同的进程间很难进行数据共享，进程之间不会单独影响。</p>
+<p>为了最佳可读性， 程序员们通常会避免每行代码超过 80 个字符串。</p>
+<p>如果某条 JavaScript 语句不适合一整行，那么最佳换行位置是某个运算符之后：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML =</span><br><span class="line"><span class="string">&quot;Hello Kitty.&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>可以修改成:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML = <span class="string">&quot;Hello \</span></span><br><span class="line"><span class="string">Kitty!&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>\ 方法并不是 ECMAScript (JavaScript) 标准。</p>
+<p>某些浏览器也不允许 \ 字符之后的空格。</p>
+<p>对长字符串换行的最安全做法（但是有点慢）是使用字符串加法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&quot;demo&quot;</span>).innerHTML = <span class="string">&quot;Hello&quot;</span> + </span><br><span class="line"><span class="string">&quot;Kitty!&quot;</span>;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>字符串可以是对象<br>通常，JavaScript 字符串是原始值，通过字面方式创建：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstName = <span class="string">&quot;Bill&quot;</span></span><br></pre></td></tr></table></figure>
+<p>但是字符串也可通过关键词 new 定义为对象：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstName = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>)</span><br><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> x = <span class="string">&quot;Bill&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// typeof x 将返回 string</span></span><br><span class="line"><span class="comment">// typeof y 将返回 object</span></span><br></pre></td></tr></table></figure>
 
+<h5 id="请不要把字符串创建为对象-它会拖慢执行速度。"><a href="#请不要把字符串创建为对象-它会拖慢执行速度。" class="headerlink" title="请不要把字符串创建为对象!!!!它会拖慢执行速度。"></a>请不要把字符串创建为对象!!!!它会拖慢执行速度。</h5><p>new 关键字使代码复杂化。也可能产生一些意想不到的结果：</p>
+<p>当使用 == 相等运算符时，相等字符串是相等的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> x = <span class="string">&quot;Bill&quot;</span>;             </span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// (x == y) 为 true，因为 x 和 y 的值相等</span></span><br></pre></td></tr></table></figure>
+
+<p>当使用 === 运算符时，相等字符串是不相等的，因为 === 运算符需要类型和值同时相等。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> x = <span class="string">&quot;Bill&quot;</span>;             </span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// (x === y) 为 false，因为 x 和 y 的类型不同（字符串与对象）</span></span><br></pre></td></tr></table></figure>
+
+<p>甚至更糟。对象无法比较：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);             </span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// (x == y) 为 false，因为 x 和 y 是不同的对象</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> x = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);             </span><br><span class="line"><span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;Bill&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// (x === y) 为 false，因为 x 和 y 是不同的对象</span></span><br></pre></td></tr></table></figure>
+
+<p>请注意 (x==y) 与 (x===y) 的区别。</p>
+<h4 id="JavaScript-对象无法进行对比，比较两个-JavaScript-将始终返回-false。"><a href="#JavaScript-对象无法进行对比，比较两个-JavaScript-将始终返回-false。" class="headerlink" title="JavaScript 对象无法进行对比，比较两个 JavaScript 将始终返回 false。"></a>JavaScript 对象无法进行对比，比较两个 JavaScript 将始终返回 false。</h4>
       
       
 
@@ -1137,7 +645,7 @@ res 的结果是：Banana</li>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
@@ -1153,7 +661,7 @@ res 的结果是：Banana</li>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端/操作系统//" class="article-tag-list-link color5">操作系统</a>
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
@@ -1162,7 +670,7 @@ res 的结果是：Banana</li>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/06/%E7%BA%BF%E7%A8%8B%E5%92%8C%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E4%B9%89/">展开全文 >></a>
         </p>
       
 
@@ -1193,46 +701,28 @@ res 的结果是：Banana</li>
 
 
   
-    <article id="post-flex布局实现及其原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-js数值方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/flex%E5%B8%83%E5%B1%80%E5%AE%9E%E7%8E%B0%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/">flex布局实现及其原理</a>
+      <a class="article-title" href="/2020/12/16/js%E6%95%B0%E5%80%BC%E6%96%B9%E6%B3%95/">js数字方法</a>
     </h1>
   
 
         
-        <a href="/2020/12/06/flex%E5%B8%83%E5%B1%80%E5%AE%9E%E7%8E%B0%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-12-05T16:56:29.438Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
+        <a href="/2020/12/16/js%E6%95%B0%E5%80%BC%E6%96%B9%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>先来了解一下什么是flex布局：相对于传统布局极其简单，适应移动端布局，操作方便，但不适应pc端。<br>pc端用传统布局，移动端用flex布局。<br><img src="https://upload-images.jianshu.io/upload_images/19449585-c4a895cc097be444.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>之前在pc端时，我们想要实现这样的效果，必然是要用浮动，给三个盒子设置完大小以后，再添加浮动属性。还要清除浮动，不然下面的内容容易影响。</p>
-<p>在flex布局中，没有块级元素和行内元素之分。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=&lt;device-width&gt;, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        div&#123;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入w80即可快速写出 */</span></span></span><br><span class="line">            width: 800px;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入h30即可快速写出 */</span></span></span><br><span class="line">            height: 300px;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入bgk即可快速写出 */</span></span></span><br><span class="line">            background-color: pink;</span><br><span class="line">        &#125;</span><br><span class="line">        div span&#123;</span><br><span class="line">            width: 150px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            background-color: purple;</span><br><span class="line">            margin-right: 5px;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 搭建html结构，输入div&gt;span*3即可快速写出下面样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- span是行内元素，没有大小 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>   </span><br><span class="line">            1</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">            2</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">            3</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>效果如下：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-9bbbfb3053e308ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>现在我们加上flex布局看看是什么效果：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=&lt;device-width&gt;, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        div&#123;</span><br><span class="line">            display: flex;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入w80即可快速写出 */</span></span></span><br><span class="line">            width: 800px;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入h30即可快速写出 */</span></span></span><br><span class="line">            height: 300px;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入bgk即可快速写出 */</span></span></span><br><span class="line">            background-color: pink;</span><br><span class="line">        &#125;</span><br><span class="line">        div span&#123;</span><br><span class="line">            width: 150px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            background-color: purple;</span><br><span class="line">            margin-right: 5px;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 搭建html结构，输入div&gt;span*3即可快速写出下面样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- span是行内元素，没有大小 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>   </span><br><span class="line">            1</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">            2</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">            3</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-09c0a9071336729d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>现在我们要是想让一个盒子在左边一个盒子在中间一个盒子在右边，再加上<code>justify-content:space-around;</code>即可：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=&lt;device-width&gt;, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        div&#123;</span><br><span class="line">            display: flex;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入w80即可快速写出 */</span></span></span><br><span class="line">            width: 800px;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入h30即可快速写出 */</span></span></span><br><span class="line">            height: 300px;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入bgk即可快速写出 */</span></span></span><br><span class="line">            background-color: pink;</span><br><span class="line"><span class="css">            <span class="selector-tag">justify-content</span><span class="selector-pseudo">:space-around</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line">        div span&#123;</span><br><span class="line">            width: 150px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            background-color: purple;</span><br><span class="line">            margin-right: 5px;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 搭建html结构，输入div&gt;span*3即可快速写出下面样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- span是行内元素，没有大小 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>   </span><br><span class="line">            1</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">            2</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">            3</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-3a7b6efddaf60817.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>而且会随着浏览器大小自适应变化：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-7f6720a678f34338.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>现在想把它们平均成三等份该如何处理呢，只需把width去掉➕<code>flex:1</code>即可。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=&lt;device-width&gt;, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        div&#123;</span><br><span class="line">            display: flex;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入w80即可快速写出 */</span></span></span><br><span class="line">            width: 800px;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入h30即可快速写出 */</span></span></span><br><span class="line">            height: 300px;</span><br><span class="line"><span class="css">            <span class="comment">/* 输入bgk即可快速写出 */</span></span></span><br><span class="line">            background-color: pink;</span><br><span class="line"><span class="css">            <span class="selector-tag">justify-content</span><span class="selector-pseudo">:space-around</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line">        div span&#123;</span><br><span class="line"><span class="css">            <span class="comment">/* width: 150px; */</span></span></span><br><span class="line">            height: 100px;</span><br><span class="line">            background-color: purple;</span><br><span class="line">            margin-right: 5px;</span><br><span class="line"><span class="css">            <span class="selector-tag">flex</span><span class="selector-pseudo">:1</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 搭建html结构，输入div&gt;span*3即可快速写出下面样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- span是行内元素，没有大小 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>   </span><br><span class="line">            1</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">            2</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">            3</span><br><span class="line">        <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-5a13728d84dbd77d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>既然flex如此好用，那它的原理是什么？</p>
-<blockquote>
-<p>它全称是flexible box，“弹性布局”，用来为盒状模型提供更大的灵活性，<strong>任何一个容易都可以指定为flex布局，不管是块级元素还是行内元素</strong>。</p>
-</blockquote>
-<h5 id="当我们为父元素设置flex布局后，子元素的float，clean和vertical-align都将失效。"><a href="#当我们为父元素设置flex布局后，子元素的float，clean和vertical-align都将失效。" class="headerlink" title="当我们为父元素设置flex布局后，子元素的float，clean和vertical-align都将失效。"></a>当我们为父元素设置flex布局后，子元素的float，clean和vertical-align都将失效。</h5><blockquote>
-<p>flex布局=弹性布局=伸缩布局=弹性盒布局=伸缩盒布局</p>
-</blockquote>
-<h4 id="flex布局是给父元素用的，此时父元素叫做flex容器，它的子元素叫做flex项目。子元素可以行排列，也可纵排列。"><a href="#flex布局是给父元素用的，此时父元素叫做flex容器，它的子元素叫做flex项目。子元素可以行排列，也可纵排列。" class="headerlink" title="flex布局是给父元素用的，此时父元素叫做flex容器，它的子元素叫做flex项目。子元素可以行排列，也可纵排列。"></a>flex布局是给父元素用的，此时父元素叫做flex容器，它的子元素叫做flex项目。子元素可以行排列，也可纵排列。</h4><h1 id="一句话总结就是：通过给父元素添加flex属性，来控制子盒子的位置和排列方式！！！"><a href="#一句话总结就是：通过给父元素添加flex属性，来控制子盒子的位置和排列方式！！！" class="headerlink" title="一句话总结就是：通过给父元素添加flex属性，来控制子盒子的位置和排列方式！！！"></a>一句话总结就是：通过给父元素添加flex属性，来控制子盒子的位置和排列方式！！！</h1>
+        <p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_number_methods.asp">https://www.w3school.com.cn/js/js_number_methods.asp</a></p>
+
       
       
 
@@ -1250,7 +740,7 @@ res 的结果是：Banana</li>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">移动端布局</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
@@ -1266,7 +756,7 @@ res 的结果是：Banana</li>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端/移动端布局//" class="article-tag-list-link color1">移动端布局</a>
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
@@ -1275,7 +765,482 @@ res 的结果是：Banana</li>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/06/flex%E5%B8%83%E5%B1%80%E5%AE%9E%E7%8E%B0%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/12/16/js%E6%95%B0%E5%80%BC%E6%96%B9%E6%B3%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-js数字" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/16/js%E6%95%B0%E5%AD%97/">js数字</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/16/js%E6%95%B0%E5%AD%97/" class="archive-article-date">
+  	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_numbers.asp">https://www.w3school.com.cn/js/js_numbers.asp</a></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/16/js%E6%95%B0%E5%AD%97/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-js数组" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/16/js%E6%95%B0%E7%BB%84/">js数组</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/16/js%E6%95%B0%E7%BB%84/" class="archive-article-date">
+  	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_arrays.asp">https://www.w3school.com.cn/js/js_arrays.asp</a></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/16/js%E6%95%B0%E7%BB%84/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-js数组排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/16/js%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/">js数组排序</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/16/js%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/" class="archive-article-date">
+  	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_array_sort.asp">https://www.w3school.com.cn/js/js_array_sort.asp</a></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/16/js%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-js数组方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/16/js%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/">js数组方法</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/16/js%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_array_methods.asp">https://www.w3school.com.cn/js/js_array_methods.asp</a></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/16/js%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-js数组迭代" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/16/js%E6%95%B0%E7%BB%84%E8%BF%AD%E4%BB%A3/">js数组迭代</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/16/js%E6%95%B0%E7%BB%84%E8%BF%AD%E4%BB%A3/" class="archive-article-date">
+  	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_array_iteration.asp">https://www.w3school.com.cn/js/js_array_iteration.asp</a></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/16/js%E6%95%B0%E7%BB%84%E8%BF%AD%E4%BB%A3/">展开全文 >></a>
         </p>
       
 
@@ -1308,7 +1273,7 @@ res 的结果是：Banana</li>
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -1433,11 +1398,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">react</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" class="js-tag color1">react</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1453,11 +1418,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">移动端布局</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">移动端布局</a>
+                <a href="javascript:void(0)" class="js-tag color4">vscode插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1473,15 +1442,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vscode插件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">数据结构和算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">面试高频题</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1490,6 +1451,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">操作系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">面试高频题</a>
               </li>
             
             <div class="clearfix"></div>
