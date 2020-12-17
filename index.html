@@ -250,225 +250,6 @@
 
 
   
-    <article id="post-js字符串方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/">js字符串方法</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><p>length</p>
-</li>
-<li><p>indexOf()方法返回字符串中指定文本首次出现的索引（位置）：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.indexOf(<span class="string">&quot;China&quot;</span>);</span><br></pre></td></tr></table></figure>
-<p>out: 17</p>
-</li>
-<li><p>lastIndexOf()方法返回字符串中指定文本最后出现的索引（位置）：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.lastIndexOf(<span class="string">&quot;China&quot;</span>);</span><br></pre></td></tr></table></figure>
-<p>out: 17</p>
-<p>如果未找到文本， indexOf() 和 lastIndexOf() 均返回 -1。</p>
-</li>
-</ol>
-<p>两种方法都接受作为检索起始位置的第二个参数。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China is the People&#x27;s Republic of China.&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.indexOf(<span class="string">&quot;China&quot;</span>, <span class="number">18</span>);</span><br></pre></td></tr></table></figure>
-<p>out: 18</p>
-<p>lastIndexOf() 方法向后进行检索（从尾到头），这意味着：假如第二个参数是 50，则从位置 50 开始检索，直到字符串的起点。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China is the People&#x27;s Republic of China.&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.lastIndexOf(<span class="string">&quot;China&quot;</span>, <span class="number">50</span>);</span><br></pre></td></tr></table></figure>
-<p>out: 17<br>4. search() 方法搜索特定值的字符串，并返回匹配的位置：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China is the People&#x27;s Republic of China.&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.search(<span class="string">&quot;locate&quot;</span>);</span><br></pre></td></tr></table></figure>
-<p>out: 17</p>
-<p>两种方法，indexOf() 与 search()，是相等的。这两种方法是不相等的。区别在于：</p>
-<ul>
-<li>search() 方法无法设置第二个开始位置参数。</li>
-<li>indexOf() 方法无法设置更强大的搜索值（正则表达式）。</li>
-</ul>
-<ol start="5">
-<li>slice() 提取字符串的某个部分并在新字符串中返回被提取的部分。该方法设置两个参数：起始索引（开始位置），终止索引（结束位置）。这个例子裁剪字符串中位置 7 到位置 13 的片段：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.slice(<span class="number">7</span>,<span class="number">13</span>);</span><br></pre></td></tr></table></figure>
-res 的结果是：Banana</li>
-</ol>
-<p>如果某个参数为负，则从字符串的结尾开始计数。</p>
-<p>这个例子裁剪字符串中位置 -12 到位置 -6 的片段：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.slice(-<span class="number">13</span>,-<span class="number">7</span>);</span><br></pre></td></tr></table></figure>
-<p>res 的结果是：Banana<br>如果省略第二个参数，则该方法将裁剪字符串的剩余部分：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> res = str.slice(<span class="number">7</span>);</span><br></pre></td></tr></table></figure>
-<p>out: Banana, Mango<br>或者从结尾计数：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> res = str.slice(-<span class="number">13</span>);</span><br></pre></td></tr></table></figure>
-<p>out: Banana, Mango<br>substring() 类似于 slice()。</p>
-<p>不同之处在于 substring() 无法接受负的索引。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.substring(<span class="number">7</span>,<span class="number">13</span>);</span><br></pre></td></tr></table></figure>
-<p>res 的结果是：</p>
-<p>Banana</p>
-<p>如果省略第二个参数，则该 substring() 将裁剪字符串的剩余部分。</p>
-<ol start="6">
-<li>substr() 方法<br>substr() 类似于 slice()。</li>
-</ol>
-<p>不同之处在于第二个参数规定被提取部分的长度。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.substr(<span class="number">7</span>,<span class="number">6</span>);</span><br></pre></td></tr></table></figure>
-<p>res 的结果是：</p>
-<p>Banana</p>
-<p>如果省略第二个参数，则该 substr() 将裁剪字符串的剩余部分。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.substr(<span class="number">7</span>);</span><br></pre></td></tr></table></figure>
-
-<p>res 的结果是：</p>
-<p>Banana, Mango<br>如果首个参数为负，则从字符串的结尾计算位置。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.substr(-<span class="number">5</span>);</span><br></pre></td></tr></table></figure>
-
-<p>res 的结果是：Mango<br>第二个参数不能为负，因为它定义的是长度。</p>
-<ol start="7">
-<li>replace() 方法用另一个值替换在字符串中指定的值：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">str = <span class="string">&quot;Please visit Microsoft!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n = str.replace(<span class="string">&quot;Microsoft&quot;</span>, <span class="string">&quot;W3School&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>replace() 方法不会改变调用它的字符串。它返回的是新字符串。</p>
-<p>默认地，replace() 只替换<strong>首个</strong>匹配：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">str = <span class="string">&quot;Please visit Microsoft and Microsoft!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n = str.replace(<span class="string">&quot;Microsoft&quot;</span>, <span class="string">&quot;W3School&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<p>默认地，replace() 对大小写敏感。因此不对匹配 MICROSOFT：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">str = <span class="string">&quot;Please visit Microsoft!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n = str.replace(<span class="string">&quot;MICROSOFT&quot;</span>, <span class="string">&quot;W3School&quot;</span>);</span><br></pre></td></tr></table></figure>
-<p>如需执行大小写不敏感的替换，请使用正则表达式 /i（大小写不敏感）：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">str = <span class="string">&quot;Please visit Microsoft!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n = str.replace(<span class="regexp">/MICROSOFT/i</span>, <span class="string">&quot;W3School&quot;</span>);</span><br></pre></td></tr></table></figure>
-<p>请注意正则表达式不带引号。</p>
-<p>如需替换所有匹配，请使用正则表达式的 g 标志（用于全局搜索）：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">str = <span class="string">&quot;Please visit Microsoft and Microsoft!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n = str.replace(<span class="regexp">/Microsoft/g</span>, <span class="string">&quot;W3School&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-
-
-<ol start="7">
-<li><p>通过 toUpperCase() 把字符串转换为大写：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> text1 = <span class="string">&quot;Hello World!&quot;</span>;       <span class="comment">// 字符串</span></span><br><span class="line"><span class="keyword">var</span> text2 = text1.toUpperCase();  <span class="comment">// text2 是被转换为大写的 text1</span></span><br></pre></td></tr></table></figure></li>
-<li><p>通过 toLowerCase() 把字符串转换为小写：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> text1 = <span class="string">&quot;Hello World!&quot;</span>;       <span class="comment">// 字符串</span></span><br><span class="line"><span class="keyword">var</span> text2 = text1.toLowerCase();  <span class="comment">// text2 是被转换为小写的 text1</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>concat() 连接两个或多个字符串：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> text1 = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> text2 = <span class="string">&quot;World&quot;</span>;</span><br><span class="line">text3 = text1.concat(<span class="string">&quot; &quot;</span>,text2);</span><br></pre></td></tr></table></figure>
-<p>concat() 方法可用于代替加运算符。下面两行是等效的：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> text = <span class="string">&quot;Hello&quot;</span> + <span class="string">&quot; &quot;</span> + <span class="string">&quot;World!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> text = <span class="string">&quot;Hello&quot;</span>.concat(<span class="string">&quot; &quot;</span>,<span class="string">&quot;World!&quot;</span>);</span><br></pre></td></tr></table></figure>
-<p>所有字符串方法都会返回新字符串。它们不会修改原始字符串。</p>
-</li>
-</ol>
-<p>正式地说：字符串是不可变的：字符串不能更改，只能替换。</p>
-<ol start="10">
-<li>String.trim()<br>trim() 方法删除字符串两端的空白符：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;       Hello World!        &quot;</span>;</span><br><span class="line">alert(str.trim());</span><br></pre></td></tr></table></figure>
-警告：Internet Explorer 8 或更低版本不支持 trim() 方法。</li>
-</ol>
-<p>如需支持 IE 8，您可搭配正则表达式使用 replace() 方法代替：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;       Hello World!        &quot;</span>;</span><br><span class="line">alert(str.replace(<span class="regexp">/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g</span>, <span class="string">&#x27;&#x27;</span>));</span><br></pre></td></tr></table></figure>
-<p>您还可以使用上面的 replace 方案把 trim 函数添加到 JavaScript String.prototype：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">if</span> (!<span class="built_in">String</span>.prototype.trim) &#123;</span><br><span class="line">  <span class="built_in">String</span>.prototype.trim = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">this</span>.replace(<span class="regexp">/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g</span>, <span class="string">&#x27;&#x27;</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;       Hello World!        &quot;</span>;</span><br><span class="line">alert(str.trim());</span><br></pre></td></tr></table></figure>
-
-<ol start="12">
-<li>这是两个提取字符串字符的安全方法：</li>
-</ol>
-<p>charAt(position)<br>charCodeAt(position)</p>
-<p>charAt() 方法返回字符串中指定下标（位置）的字符串：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;HELLO WORLD&quot;</span>;</span><br><span class="line">str.charAt(<span class="number">0</span>);            <span class="comment">// 返回 H</span></span><br></pre></td></tr></table></figure>
-
-<p>charCodeAt() 方法返回字符串中指定索引的字符 unicode 编码：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;HELLO WORLD&quot;</span>;</span><br><span class="line"></span><br><span class="line">str.charCodeAt(<span class="number">0</span>);         <span class="comment">// 返回 72</span></span><br></pre></td></tr></table></figure>
-
-<ol start="13">
-<li>属性访问（Property Access）<br>ECMAScript 5 (2009) 允许对字符串的属性访问 [ ]：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;HELLO WORLD&quot;</span>;</span><br><span class="line">str[<span class="number">0</span>];                   <span class="comment">// 返回 H</span></span><br></pre></td></tr></table></figure>
-使用属性访问有点不太靠谱：</li>
-</ol>
-<p>不适用 Internet Explorer 7 或更早的版本<br>它让字符串看起来像是数组（其实并不是）<br>如果找不到字符，[ ] 返回 undefined，而 charAt() 返回空字符串。<br>它是只读的。str[0] = “A” 不会产生错误（但也不会工作！）</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;HELLO WORLD&quot;</span>;</span><br><span class="line">str[<span class="number">0</span>] = <span class="string">&quot;A&quot;</span>;             <span class="comment">// 不产生错误，但不会工作</span></span><br><span class="line">str[<span class="number">0</span>];                   <span class="comment">// 返回 H</span></span><br></pre></td></tr></table></figure>
-<p>提示：如果您希望按照数组的方式处理字符串，可以先把它转换为数组。</p>
-<ol start="14">
-<li>可以通过 split() 将字符串转换为数组：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> txt = <span class="string">&quot;a,b,c,d,e&quot;</span>;   <span class="comment">// 字符串</span></span><br><span class="line">txt.split(<span class="string">&quot;,&quot;</span>);          <span class="comment">// 用逗号分隔</span></span><br><span class="line">txt.split(<span class="string">&quot; &quot;</span>);          <span class="comment">// 用空格分隔</span></span><br><span class="line">txt.split(<span class="string">&quot;|&quot;</span>);          <span class="comment">// 用竖线分隔</span></span><br></pre></td></tr></table></figure>
-如果省略分隔符，被返回的数组将包含 index [0] 中的整个字符串。</li>
-</ol>
-<p>如果分隔符是 “”，被返回的数组将是间隔单个字符的数组：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> txt = <span class="string">&quot;Hello&quot;</span>;       <span class="comment">// 字符串</span></span><br><span class="line">txt.split(<span class="string">&quot;&quot;</span>);           <span class="comment">// 分隔为字符</span></span><br></pre></td></tr></table></figure>
-
-
-
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
     <article id="post-js字符串转义" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -662,6 +443,225 @@ res 的结果是：Banana</li>
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/12/16/js%E6%95%B0%E5%AD%97/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
+    <article id="post-js字符串方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/">js字符串方法</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2020-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>length</p>
+</li>
+<li><p>indexOf()方法返回字符串中指定文本首次出现的索引（位置）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.indexOf(<span class="string">&quot;China&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>out: 17</p>
+</li>
+<li><p>lastIndexOf()方法返回字符串中指定文本最后出现的索引（位置）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.lastIndexOf(<span class="string">&quot;China&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>out: 17</p>
+<p>如果未找到文本， indexOf() 和 lastIndexOf() 均返回 -1。</p>
+</li>
+</ol>
+<p>两种方法都接受作为检索起始位置的第二个参数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China is the People&#x27;s Republic of China.&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.indexOf(<span class="string">&quot;China&quot;</span>, <span class="number">18</span>);</span><br></pre></td></tr></table></figure>
+<p>out: 18</p>
+<p>lastIndexOf() 方法向后进行检索（从尾到头），这意味着：假如第二个参数是 50，则从位置 50 开始检索，直到字符串的起点。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China is the People&#x27;s Republic of China.&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.lastIndexOf(<span class="string">&quot;China&quot;</span>, <span class="number">50</span>);</span><br></pre></td></tr></table></figure>
+<p>out: 17<br>4. search() 方法搜索特定值的字符串，并返回匹配的位置：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;The full name of China is the People&#x27;s Republic of China.&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> pos = str.search(<span class="string">&quot;locate&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>out: 17</p>
+<p>两种方法，indexOf() 与 search()，是相等的。这两种方法是不相等的。区别在于：</p>
+<ul>
+<li>search() 方法无法设置第二个开始位置参数。</li>
+<li>indexOf() 方法无法设置更强大的搜索值（正则表达式）。</li>
+</ul>
+<ol start="5">
+<li>slice() 提取字符串的某个部分并在新字符串中返回被提取的部分。该方法设置两个参数：起始索引（开始位置），终止索引（结束位置）。这个例子裁剪字符串中位置 7 到位置 13 的片段：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.slice(<span class="number">7</span>,<span class="number">13</span>);</span><br></pre></td></tr></table></figure>
+res 的结果是：Banana</li>
+</ol>
+<p>如果某个参数为负，则从字符串的结尾开始计数。</p>
+<p>这个例子裁剪字符串中位置 -12 到位置 -6 的片段：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.slice(-<span class="number">13</span>,-<span class="number">7</span>);</span><br></pre></td></tr></table></figure>
+<p>res 的结果是：Banana<br>如果省略第二个参数，则该方法将裁剪字符串的剩余部分：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> res = str.slice(<span class="number">7</span>);</span><br></pre></td></tr></table></figure>
+<p>out: Banana, Mango<br>或者从结尾计数：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> res = str.slice(-<span class="number">13</span>);</span><br></pre></td></tr></table></figure>
+<p>out: Banana, Mango<br>substring() 类似于 slice()。</p>
+<p>不同之处在于 substring() 无法接受负的索引。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.substring(<span class="number">7</span>,<span class="number">13</span>);</span><br></pre></td></tr></table></figure>
+<p>res 的结果是：</p>
+<p>Banana</p>
+<p>如果省略第二个参数，则该 substring() 将裁剪字符串的剩余部分。</p>
+<ol start="6">
+<li>substr() 方法<br>substr() 类似于 slice()。</li>
+</ol>
+<p>不同之处在于第二个参数规定被提取部分的长度。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.substr(<span class="number">7</span>,<span class="number">6</span>);</span><br></pre></td></tr></table></figure>
+<p>res 的结果是：</p>
+<p>Banana</p>
+<p>如果省略第二个参数，则该 substr() 将裁剪字符串的剩余部分。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.substr(<span class="number">7</span>);</span><br></pre></td></tr></table></figure>
+
+<p>res 的结果是：</p>
+<p>Banana, Mango<br>如果首个参数为负，则从字符串的结尾计算位置。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Apple, Banana, Mango&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> res = str.substr(-<span class="number">5</span>);</span><br></pre></td></tr></table></figure>
+
+<p>res 的结果是：Mango<br>第二个参数不能为负，因为它定义的是长度。</p>
+<ol start="7">
+<li>replace() 方法用另一个值替换在字符串中指定的值：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">str = <span class="string">&quot;Please visit Microsoft!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n = str.replace(<span class="string">&quot;Microsoft&quot;</span>, <span class="string">&quot;W3School&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>replace() 方法不会改变调用它的字符串。它返回的是新字符串。</p>
+<p>默认地，replace() 只替换<strong>首个</strong>匹配：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">str = <span class="string">&quot;Please visit Microsoft and Microsoft!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n = str.replace(<span class="string">&quot;Microsoft&quot;</span>, <span class="string">&quot;W3School&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>默认地，replace() 对大小写敏感。因此不对匹配 MICROSOFT：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">str = <span class="string">&quot;Please visit Microsoft!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n = str.replace(<span class="string">&quot;MICROSOFT&quot;</span>, <span class="string">&quot;W3School&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>如需执行大小写不敏感的替换，请使用正则表达式 /i（大小写不敏感）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">str = <span class="string">&quot;Please visit Microsoft!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n = str.replace(<span class="regexp">/MICROSOFT/i</span>, <span class="string">&quot;W3School&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>请注意正则表达式不带引号。</p>
+<p>如需替换所有匹配，请使用正则表达式的 g 标志（用于全局搜索）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line">str = <span class="string">&quot;Please visit Microsoft and Microsoft!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n = str.replace(<span class="regexp">/Microsoft/g</span>, <span class="string">&quot;W3School&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="7">
+<li><p>通过 toUpperCase() 把字符串转换为大写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> text1 = <span class="string">&quot;Hello World!&quot;</span>;       <span class="comment">// 字符串</span></span><br><span class="line"><span class="keyword">var</span> text2 = text1.toUpperCase();  <span class="comment">// text2 是被转换为大写的 text1</span></span><br></pre></td></tr></table></figure></li>
+<li><p>通过 toLowerCase() 把字符串转换为小写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> text1 = <span class="string">&quot;Hello World!&quot;</span>;       <span class="comment">// 字符串</span></span><br><span class="line"><span class="keyword">var</span> text2 = text1.toLowerCase();  <span class="comment">// text2 是被转换为小写的 text1</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>concat() 连接两个或多个字符串：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> text1 = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> text2 = <span class="string">&quot;World&quot;</span>;</span><br><span class="line">text3 = text1.concat(<span class="string">&quot; &quot;</span>,text2);</span><br></pre></td></tr></table></figure>
+<p>concat() 方法可用于代替加运算符。下面两行是等效的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> text = <span class="string">&quot;Hello&quot;</span> + <span class="string">&quot; &quot;</span> + <span class="string">&quot;World!&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> text = <span class="string">&quot;Hello&quot;</span>.concat(<span class="string">&quot; &quot;</span>,<span class="string">&quot;World!&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>所有字符串方法都会返回新字符串。它们不会修改原始字符串。</p>
+</li>
+</ol>
+<p>正式地说：字符串是不可变的：字符串不能更改，只能替换。</p>
+<ol start="10">
+<li>String.trim()<br>trim() 方法删除字符串两端的空白符：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;       Hello World!        &quot;</span>;</span><br><span class="line">alert(str.trim());</span><br></pre></td></tr></table></figure>
+警告：Internet Explorer 8 或更低版本不支持 trim() 方法。</li>
+</ol>
+<p>如需支持 IE 8，您可搭配正则表达式使用 replace() 方法代替：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;       Hello World!        &quot;</span>;</span><br><span class="line">alert(str.replace(<span class="regexp">/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g</span>, <span class="string">&#x27;&#x27;</span>));</span><br></pre></td></tr></table></figure>
+<p>您还可以使用上面的 replace 方案把 trim 函数添加到 JavaScript String.prototype：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">if</span> (!<span class="built_in">String</span>.prototype.trim) &#123;</span><br><span class="line">  <span class="built_in">String</span>.prototype.trim = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">this</span>.replace(<span class="regexp">/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g</span>, <span class="string">&#x27;&#x27;</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;       Hello World!        &quot;</span>;</span><br><span class="line">alert(str.trim());</span><br></pre></td></tr></table></figure>
+
+<ol start="12">
+<li>这是两个提取字符串字符的安全方法：</li>
+</ol>
+<p>charAt(position)<br>charCodeAt(position)</p>
+<p>charAt() 方法返回字符串中指定下标（位置）的字符串：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;HELLO WORLD&quot;</span>;</span><br><span class="line">str.charAt(<span class="number">0</span>);            <span class="comment">// 返回 H</span></span><br></pre></td></tr></table></figure>
+
+<p>charCodeAt() 方法返回字符串中指定索引的字符 unicode 编码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;HELLO WORLD&quot;</span>;</span><br><span class="line"></span><br><span class="line">str.charCodeAt(<span class="number">0</span>);         <span class="comment">// 返回 72</span></span><br></pre></td></tr></table></figure>
+
+<ol start="13">
+<li>属性访问（Property Access）<br>ECMAScript 5 (2009) 允许对字符串的属性访问 [ ]：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;HELLO WORLD&quot;</span>;</span><br><span class="line">str[<span class="number">0</span>];                   <span class="comment">// 返回 H</span></span><br></pre></td></tr></table></figure>
+使用属性访问有点不太靠谱：</li>
+</ol>
+<p>不适用 Internet Explorer 7 或更早的版本<br>它让字符串看起来像是数组（其实并不是）<br>如果找不到字符，[ ] 返回 undefined，而 charAt() 返回空字符串。<br>它是只读的。str[0] = “A” 不会产生错误（但也不会工作！）</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;HELLO WORLD&quot;</span>;</span><br><span class="line">str[<span class="number">0</span>] = <span class="string">&quot;A&quot;</span>;             <span class="comment">// 不产生错误，但不会工作</span></span><br><span class="line">str[<span class="number">0</span>];                   <span class="comment">// 返回 H</span></span><br></pre></td></tr></table></figure>
+<p>提示：如果您希望按照数组的方式处理字符串，可以先把它转换为数组。</p>
+<ol start="14">
+<li>可以通过 split() 将字符串转换为数组：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> txt = <span class="string">&quot;a,b,c,d,e&quot;</span>;   <span class="comment">// 字符串</span></span><br><span class="line">txt.split(<span class="string">&quot;,&quot;</span>);          <span class="comment">// 用逗号分隔</span></span><br><span class="line">txt.split(<span class="string">&quot; &quot;</span>);          <span class="comment">// 用空格分隔</span></span><br><span class="line">txt.split(<span class="string">&quot;|&quot;</span>);          <span class="comment">// 用竖线分隔</span></span><br></pre></td></tr></table></figure>
+如果省略分隔符，被返回的数组将包含 index [0] 中的整个字符串。</li>
+</ol>
+<p>如果分隔符是 “”，被返回的数组将是间隔单个字符的数组：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">实例</span><br><span class="line"><span class="keyword">var</span> txt = <span class="string">&quot;Hello&quot;</span>;       <span class="comment">// 字符串</span></span><br><span class="line">txt.split(<span class="string">&quot;&quot;</span>);           <span class="comment">// 分隔为字符</span></span><br></pre></td></tr></table></figure>
+
+
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/js//" class="article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/16/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/">展开全文 >></a>
         </p>
       
 
@@ -1433,11 +1433,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" class="js-tag color1">react</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">react</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1453,15 +1453,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">移动端布局</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vscode插件</a>
+                <a href="javascript:void(0)" class="js-tag color1">移动端布局</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1477,7 +1473,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vscode插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">数据结构和算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">面试高频题</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1486,10 +1490,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">操作系统</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">面试高频题</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1558,6 +1558,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://www.w3school.com.cn/js/js_date_methods.asp" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>js-w3school</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://yangchaoyi.vip/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>超逸の博客</a>
             </li>
           
         </ul>
