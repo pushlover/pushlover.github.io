@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>js错误：Cannot set property &#39;src&#39; of null | mxy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天在用js获取image标签时，修改src路径报此错误: 1document.getElementById(&quot;image&quot;).src&#x3D;&quot;css&#x2F;img&#x2F;banner@2x.png&quot;; 这是因为代码没有获取到id为“image”的元素，那么就是null，null是没有办法set属性的，所以就会浏览器就会抛出这个错误：  解决方法：解决办法设置属性之前，ima">
+  <meta name="description" content="今天在用js获取image标签时，修改src路径报此错误: 1document.getElementById(&quot;image&quot;).src&#x3D;&quot;css&#x2F;img&#x2F;banner@2x.png&quot;; 这是因为代码没有获取到id为“image”的元素，那么就是null，null是没有办法set属性的，所以就会浏览器就会抛出这个错误：  解决方法：  设置属性之前，image">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js错误：Cannot set property &#39;src&#39; of null">
 <meta property="og:url" content="http://example.com/2020/12/20/js%E9%94%99%E8%AF%AF:%20Cannot%20set%20property%20'src'%20of%20null/index.html">
 <meta property="og:site_name" content="mxy">
-<meta property="og:description" content="今天在用js获取image标签时，修改src路径报此错误: 1document.getElementById(&quot;image&quot;).src&#x3D;&quot;css&#x2F;img&#x2F;banner@2x.png&quot;; 这是因为代码没有获取到id为“image”的元素，那么就是null，null是没有办法set属性的，所以就会浏览器就会抛出这个错误：  解决方法：解决办法设置属性之前，ima">
+<meta property="og:description" content="今天在用js获取image标签时，修改src路径报此错误: 1document.getElementById(&quot;image&quot;).src&#x3D;&quot;css&#x2F;img&#x2F;banner@2x.png&quot;; 这是因为代码没有获取到id为“image”的元素，那么就是null，null是没有办法set属性的，所以就会浏览器就会抛出这个错误：  解决方法：  设置属性之前，image">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-20T15:21:03.000Z">
+<meta property="article:modified_time" content="2020-12-20T15:57:36.629Z">
 <meta property="article:author" content="Xinyu Miao">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="js-bug">
@@ -171,8 +171,9 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&quot;image&quot;</span>).src=<span class="string">&quot;css/img/banner@2x.png&quot;</span>;</span><br></pre></td></tr></table></figure>
 <p>这是因为代码没有获取到id为“image”的元素，那么就是null，null是没有办法set属性的，所以就会浏览器就会抛出这个错误：</p>
 <blockquote>
-<p>解决方法：<br>解决办法<br>设置属性之前，image这个元素已经被渲染完成，浏览器可以获取到这个元素，这样的话就不会报错。用<code>window.onload()</code>来实现上述过程，将该行代码替换为：</p>
+<p>解决方法：</p>
 </blockquote>
+<p>设置属性之前，image这个元素已经被渲染完成，浏览器可以获取到这个元素，这样的话就不会报错。用<code>window.onload()</code>来实现上述过程，将该行代码替换为：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;	</span><br><span class="line">	<span class="built_in">document</span>.getElementById(<span class="string">&quot;image&quot;</span>).src=<span class="string">&quot;css/img/banner@2x.png&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
@@ -611,6 +612,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://yangchaoyi.vip/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>超逸の博客</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://github.com/pushlover/web-project" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>前端项目</a>
             </li>
           
         </ul>
