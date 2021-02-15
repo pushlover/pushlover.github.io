@@ -60,7 +60,7 @@
 			</ul>
 		</nav>
                 <nav>
-   			总文章数 85
+   			总文章数 86
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -142,6 +142,121 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-虚拟dom和dom diff" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/06/%E8%99%9A%E6%8B%9Fdom%E5%92%8Cdom%20diff/">虚拟dom和dom diff</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/06/%E8%99%9A%E6%8B%9Fdom%E5%92%8Cdom%20diff/" class="archive-article-date">
+  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>dom：</p>
+</blockquote>
+<p>浏览器中的概念，用js对象来表示页面上的元素，并提供了操作dom对象的api</p>
+<blockquote>
+<p>虚拟dom：</p>
+</blockquote>
+<p>定义：用js对象来<strong>模拟</strong>页面上的dom和dom嵌套，是框架中的概念；<br>virtual DOM是将真实的DOM的数据抽取出来，以对象的形式模拟树形结构<br>和真实dom对应，是一个能代表dom树的对象，通常含有标签名、标签上的属性、事件监听和子元素们，以及其它属性。<br>目的是实现dom的高效更新<br><img src="https://upload-images.jianshu.io/upload_images/19449585-92500d4fa409f464.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>优点：</p>
+<ol>
+<li>减少dom操作，比如添加div1000个，虚拟dom只要添加一个。<br><img src="https://upload-images.jianshu.io/upload_images/19449585-7a24b715f6c643e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>发现有一些在页面的不需要更新的，就不再更新了</li>
+<li>跨平台<br>虚拟dom实际上是一个js对象</li>
+</ol>
+<p>缺点：<br>需要额外的创建函数，如createElement或h，但可以通过JSX来简化成XML写法，但会严重依赖打包函数。<br><img src="https://upload-images.jianshu.io/upload_images/19449585-371832d84cffb6eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>实现虚拟dom嵌套：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-90bf6f43581ca6d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-1e30c1f6c004df37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>真实dom并不慢，js用时很快，只是浏览器在渲染页面时会不可交互，渲染时间常长。<br>原生js比react快，规模小的时候，react更快，但是规模大的时候，js更快。<br>但是vue和原生js一样快。</p>
+<blockquote>
+<p>dom diff</p>
+</blockquote>
+<p>问题引入：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-c48901d1d4dea3a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-80199039b757c271.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-1e95a54e467284f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-21428878628e6c48.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>算法实现：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-3093eb336c40fa38.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-3f0b85b3bbc661e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/react//" class="article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/06/%E8%99%9A%E6%8B%9Fdom%E5%92%8Cdom%20diff/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
   
     <article id="post-面试高频题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">

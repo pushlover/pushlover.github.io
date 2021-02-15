@@ -60,7 +60,7 @@
 			</ul>
 		</nav>
                 <nav>
-   			总文章数 85
+   			总文章数 86
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -142,6 +142,113 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-基于class关键字创建组件和函数创建组件的不同" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/06/%E5%9F%BA%E4%BA%8Eclass%E5%85%B3%E9%94%AE%E5%AD%97%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6%E5%92%8C%E5%87%BD%E6%95%B0%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6%E7%9A%84%E4%B8%8D%E5%90%8C/">基于class关键字创建组件和函数创建组件的不同</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/06/%E5%9F%BA%E4%BA%8Eclass%E5%85%B3%E9%94%AE%E5%AD%97%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6%E5%92%8C%E5%87%BD%E6%95%B0%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6%E7%9A%84%E4%B8%8D%E5%90%8C/" class="archive-article-date">
+  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://upload-images.jianshu.io/upload_images/19449585-159d05f272bcb4ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>在组件内部必须要有render函数，render函数中，必须要返回合法的jsx 虚拟dom结构,render函数的作用是渲染当前组件对应的虚拟dom结构，render是这个类的实例方法<br>如果要使用class定义组件，必须要继承自react.component</p>
+<p>为创建的组件传递props参数：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-8aa64bece0d53b73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>index.js中写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./index.css&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">&#x27;./App&#x27;</span>;</span><br><span class="line"><span class="comment">// import registerServiceWorker from &#x27;./registerServiceWorker&#x27;;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> user=&#123;</span><br><span class="line">  name:<span class="string">&quot;tom&quot;</span>,</span><br><span class="line">  age:<span class="string">&quot;18&quot;</span>,</span><br><span class="line">  gender:<span class="string">&quot;女&quot;</span></span><br><span class="line">&#125;</span><br><span class="line">ReactDOM.render(<span class="xml"><span class="tag">&lt;<span class="name">App</span> &#123;<span class="attr">...user</span>&#125;&gt;</span><span class="tag">&lt;/<span class="name">App</span>&gt;</span></span>, <span class="built_in">document</span>.getElementById(<span class="string">&#x27;root&#x27;</span>));</span><br><span class="line"><span class="comment">// // registerServiceWorker();</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>App.js中写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123;Component&#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">APP</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="function"><span class="title">render</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">         </span><br><span class="line">         &#123;<span class="built_in">this</span>.props.name&#125;</span><br><span class="line">         &#123;<span class="built_in">this</span>.props.age&#125;</span><br><span class="line">         &#123;<span class="built_in">this</span>.props.gender&#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    </span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ReactDOM.render(&lt;APP &#123;...user&#125;&gt;&lt;/APP&gt;, document.getElementById(&#x27;&#x27;));</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> APP;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-cd62c91eb8052055.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>不能通过props对传递进来的参数进行改变：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-fadde8c39a2e3e9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-b2c0e3e9aa5b0656.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-2d93f4523949e5e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>用过this.state来绑定私有数据，是react自己的东西，可读可写：<br>html.js里面写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./index.css&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">&#x27;./App&#x27;</span>;</span><br><span class="line"><span class="comment">// import registerServiceWorker from &#x27;./registerServiceWorker&#x27;;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> user=&#123;</span><br><span class="line">  name:<span class="string">&quot;tom&quot;</span>,</span><br><span class="line">  age:<span class="string">&quot;18&quot;</span>,</span><br><span class="line">  gender:<span class="string">&quot;女&quot;</span></span><br><span class="line">&#125;</span><br><span class="line">ReactDOM.render(<span class="xml"><span class="tag">&lt;<span class="name">App</span> &#123;<span class="attr">...user</span>&#125;&gt;</span><span class="tag">&lt;/<span class="name">App</span>&gt;</span></span>, <span class="built_in">document</span>.getElementById(<span class="string">&#x27;root&#x27;</span>));</span><br><span class="line"><span class="comment">// // registerServiceWorker();</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>App.js里面写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123;Component&#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">APP</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">super</span>()</span><br><span class="line">    <span class="comment">// state中的数据是可读可写的</span></span><br><span class="line">    <span class="built_in">this</span>.state=&#123;</span><br><span class="line">      message:<span class="string">&quot;state私有属性&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="title">render</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.state.message=<span class="string">&quot;state的值被我修改了&quot;</span></span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">         &#123;<span class="built_in">this</span>.state.message&#125;</span><br><span class="line">         &#123;<span class="built_in">this</span>.props.name&#125;</span><br><span class="line">         &#123;<span class="built_in">this</span>.props.age&#125;</span><br><span class="line">         &#123;<span class="built_in">this</span>.props.gender&#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    </span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ReactDOM.render(&lt;APP &#123;...user&#125;&gt;&lt;/APP&gt;, document.getElementById(&#x27;&#x27;));</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> APP;</span><br></pre></td></tr></table></figure>
+<p>有状态组件和无状态组件的区别：<br>无状态组件用的不多<br>如果一个组件，它需要有自己私有的数据，那我们推荐用<br>有状态组件；<br>如果一个组件不需要有自己私有的数据，推荐无状态组件；<br>无状态组件由于没有自己的私有数据和生命周期函数，所以它的运行效率更高一些；<br>###组件中的props和state/date的区别：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19449585-14dc6a3256759305.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+
+      
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/react//" class="article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/06/%E5%9F%BA%E4%BA%8Eclass%E5%85%B3%E9%94%AE%E5%AD%97%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6%E5%92%8C%E5%87%BD%E6%95%B0%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6%E7%9A%84%E4%B8%8D%E5%90%8C/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
   
     <article id="post-库和框架的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -988,121 +1095,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/12/06/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E6%B3%95/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-虚拟dom和dom diff" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/%E8%99%9A%E6%8B%9Fdom%E5%92%8Cdom%20diff/">虚拟dom和dom diff</a>
-    </h1>
-  
-
-        
-        <a href="/2020/12/06/%E8%99%9A%E6%8B%9Fdom%E5%92%8Cdom%20diff/" class="archive-article-date">
-  	<time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>dom：</p>
-</blockquote>
-<p>浏览器中的概念，用js对象来表示页面上的元素，并提供了操作dom对象的api</p>
-<blockquote>
-<p>虚拟dom：</p>
-</blockquote>
-<p>定义：用js对象来<strong>模拟</strong>页面上的dom和dom嵌套，是框架中的概念；<br>virtual DOM是将真实的DOM的数据抽取出来，以对象的形式模拟树形结构<br>和真实dom对应，是一个能代表dom树的对象，通常含有标签名、标签上的属性、事件监听和子元素们，以及其它属性。<br>目的是实现dom的高效更新<br><img src="https://upload-images.jianshu.io/upload_images/19449585-92500d4fa409f464.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>优点：</p>
-<ol>
-<li>减少dom操作，比如添加div1000个，虚拟dom只要添加一个。<br><img src="https://upload-images.jianshu.io/upload_images/19449585-7a24b715f6c643e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>发现有一些在页面的不需要更新的，就不再更新了</li>
-<li>跨平台<br>虚拟dom实际上是一个js对象</li>
-</ol>
-<p>缺点：<br>需要额外的创建函数，如createElement或h，但可以通过JSX来简化成XML写法，但会严重依赖打包函数。<br><img src="https://upload-images.jianshu.io/upload_images/19449585-371832d84cffb6eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>实现虚拟dom嵌套：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-90bf6f43581ca6d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-1e30c1f6c004df37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>真实dom并不慢，js用时很快，只是浏览器在渲染页面时会不可交互，渲染时间常长。<br>原生js比react快，规模小的时候，react更快，但是规模大的时候，js更快。<br>但是vue和原生js一样快。</p>
-<blockquote>
-<p>dom diff</p>
-</blockquote>
-<p>问题引入：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-c48901d1d4dea3a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-80199039b757c271.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-1e95a54e467284f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/19449585-21428878628e6c48.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>算法实现：<br><img src="https://upload-images.jianshu.io/upload_images/19449585-3093eb336c40fa38.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/19449585-3f0b85b3bbc661e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-
-      
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/react//" class="article-tag-list-link color1">react</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/06/%E8%99%9A%E6%8B%9Fdom%E5%92%8Cdom%20diff/">展开全文 >></a>
         </p>
       
 
